@@ -1,8 +1,10 @@
 import React from 'react'
-
+import styles from "./Business.module.scss"
 const BusinessAnalysis = () => {
   return (
-    <div>BusinessAnalysis</div>
+    <section className={styles.container}>
+      wde
+    </section>
   )
 }
 
