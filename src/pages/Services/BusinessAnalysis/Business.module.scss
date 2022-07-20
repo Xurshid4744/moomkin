@@ -1,0 +1,22 @@
+.container {
+  background-image: url("../../../assets/images/backgroundImg/BussinessAnalysis.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 650px;
+  width: 100%;
+  background-size: cover;
+  .wrapper {
+    padding-top: 100px;
+  }
+}
+.cards {
+  display: grid;
+  padding: 100px 100px 0 100px;
+  grid-template-columns: auto auto;
+  row-gap: 50px;
+  column-gap: 50px;
+}
+.title{
+    padding: 100px 150px;
+    font-size: 18px;
+}
