@@ -1,9 +1,9 @@
 .container {
-  background-color: #ecf0f4;
   @media (max-width: 991px) {
     padding-top: 100px;
   }
   .wrapper {
+    padding-top: 50px;
     padding-bottom: 200px;
     @media (max-width: 767px) {
       display: none;

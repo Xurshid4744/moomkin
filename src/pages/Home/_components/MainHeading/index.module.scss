@@ -2,10 +2,9 @@
 .mainHeading {
   background-image: url(../../../../assets/icons/main-bg.svg);
   background-repeat: no-repeat;
-  background-position: top;
-  height: 700px;
-  width: 100%;
-  background-size: 2300px;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 600px;
   @media (max-width: 767px) {
     background-image: none;
     background-color: #015587;

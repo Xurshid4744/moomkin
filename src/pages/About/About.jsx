@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectAnalysis from "../Home/_components/ProjectAnalysis/ProjectAnalysis";
+import ProjectAnalysis from "../../components/ProjectAnalysis/ProjectAnalysis";
 import SomeFacts from "../Home/_components/SomeFacts/SomeFacts";
 import CompanyProfile from "./_components/CompanyProfile/CompanyProfile";
 import Development from "./_components/Development/Development";

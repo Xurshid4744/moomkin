@@ -9,12 +9,7 @@ import img2 from "../../../../assets/images/img2.jpg";
 import img3 from "../../../../assets/images/img3.jpg";
 import img4 from "../../../../assets/images/img4.jpg";
 import img5 from "../../../../assets/images/img5.jpg";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import TinySwiper from "../../../../components/Swipers/TinySwiper/TinySwiper";
 
 const CustomSoft = () => {
   const images = [
@@ -37,27 +32,7 @@ const CustomSoft = () => {
           <br /> - 150+ developed custom solutions <br /> - 100+ clients <br />-
           25+ countries, including the USA
         </p>
-        <div className={styles.swiper}>
-          <Swiper
-            style={{
-              "--swiper-navigation-color": "#fff",
-              "--swiper-pagination-color": "#fff",
-            }}
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
-            spaceBetween={10}
-            slidesPerView={1}
-            loop={true}
-            navigation
-            pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
-          >
-            {images.map((item) => (
-              <SwiperSlide>
-                <img src={item.img} alt={item.name} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+        <TinySwiper data={images} />
       </div>
     </section>
   );
