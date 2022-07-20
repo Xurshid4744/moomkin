@@ -102,12 +102,6 @@ const AddTechMarketing = () => {
         <Title title={"Our Happy Clients"} />
         <BigSwiper obj={obj} />
 
-        <div className={styles.btn__wrapper}>
-          <button className={styles.all_btn}>View all testimonials
-            <i id={styles.icon} class="fa-solid fa-arrow-right-long"></i>
-          </button>
-        </div>
-
       </section>
 
       <section className={styles.footer_top}>
