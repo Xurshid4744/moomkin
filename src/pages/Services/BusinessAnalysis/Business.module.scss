@@ -29,6 +29,12 @@
     }
   }
 }
-.analysis{
-    display: flex;
+.business{
+    .analysis{
+        display: flex;
+        padding: 50px 50px 0 50px;
+    }
+    .title{
+        padding: 100px;
+    }
 }

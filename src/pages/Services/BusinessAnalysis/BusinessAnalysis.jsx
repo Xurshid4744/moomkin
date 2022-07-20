@@ -31,6 +31,7 @@ import img19 from "../../../assets/images/img5.jpg";
 import SmallSwiper from "../../../components/Swipers/SmallSwiper/SmallSwiper";
 import TinySwiper from "../../../components/Swipers/TinySwiper/TinySwiper";
 import BusinessResults from "../../../components/BusinessResults/BusinessResults";
+import BigSwiper from "../../../components/Swipers/BigSwiper/BigSwiper";
 
 const BusinessAnalysis = () => {
   const menu = [
@@ -158,6 +159,32 @@ const BusinessAnalysis = () => {
     { img: img18, name: "foto" },
     { img: img19, name: "foto" },
   ];
+  const results = [
+    { title: "Document describing the project and its project boundaries" },
+    { title: "Project requirements specification" },
+    { title: "Technical specification and requirements" },
+    { title: "Use case model" },
+    { title: "User stories" },
+    { title: "User Interface Prototypes" },
+    { title: "Project estimation and timeline" },
+  ];
+  const swiper = [
+    {
+      img: img17,
+      name: "Ne'matov Xurshid",
+      position: "Tartle",
+      job: "CEO",
+      title:
+        "We tried another company that one of our partners had used but they didn’t work out. I feel that SumatoSoft does a better investigation of what we’re asking for. They tell us how they plan to do a task and ask if that works for us. We chose them because their method worked with us.",
+    },
+    {
+      img: img19,
+      name: "Ne'matov Xurshid",
+      position: "Tartle",
+      job: "CEO",
+      title: `The system has produced a significant competitive advantage in the industry thanks to SumatoSoft’s well-thought opinions. They shouldered the burden of constantly updating a project management tool with a high level of detail and were committed to producing the best possible solution.`,
+    },
+  ];
   return (
     <>
       <section className={styles.container}>
@@ -208,14 +235,27 @@ const BusinessAnalysis = () => {
           ))}
         </div>
       </section>
-     <SmallSwiper obj={obj} bg={"#ecf0f4"}/>
-     <section>
-      <Title title={"Business Analysis Services Results"}/>
-      <div className={styles.analysis}>
-            <BusinessResults/>
-            <TinySwiper data={images}/>
-      </div>
-     </section>
+      <SmallSwiper obj={obj} bg={"#ecf0f4"} />
+      <section className={`${styles.business} globalContainer`}>
+        <Title title={"Business Analysis Services Results"} />
+        <div className={styles.analysis}>
+          <BusinessResults data={results} />
+          <TinySwiper data={images} />
+        </div>
+        <p className={styles.title}>
+          If you want to be sure that all the wishes for the future software
+          product are taken into account and structured competently, you need a
+          business analysis and we can do this for you. Our IT Business Analysts
+          take you through a business analysis stage, after which you can
+          already turn to product development without the risk of remaining
+          incomprehensible or breaking deadlines! You can find our portfolio
+          projects for business analysis below
+        </p>
+      </section>
+      <section className={`${styles.bigSwiper} globalContainer`}>
+        <Title title={"Our Happy Clients"} />
+        <BigSwiper obj={swiper} />
+      </section>
     </>
   );
 };
