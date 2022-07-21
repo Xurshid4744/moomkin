@@ -1,4 +1,5 @@
 import About from "./pages/About/About";
+import EngagementModels from "./pages/About/EngagementModels/EngagementModels";
 import EnterpriseApps from "./pages/ExpertiseVsIndustries/Expertise/EnterpriseApps/EnterpriseApps";
 import InternetOfThings from "./pages/ExpertiseVsIndustries/Expertise/InternetOfThings/InternetOfThings";
 import MobileApps from "./pages/ExpertiseVsIndustries/Expertise/MobileApps/MobileApps";
@@ -27,6 +28,7 @@ const routes = [
     { path: `/solutions/mobile-app-development`, element: <MobileApps/>  },
     { path: `/solutions/saas-development`, element: <SaasDevelopment/>  },
     { path: `/industries/advertising-and-marketing-automation-development`, element: <AddTechMarketing/>  },
+    { path: `/engagement-models`, element: <EngagementModels/>  },
     
     { path: `/about`, element: <About /> },
 ];
