@@ -1,8 +1,7 @@
 import React from "react";
-import Title from "../../../../components/Title/Title";
+import Title from "../Title/Title";
 
 import styles from "./index.module.scss";
-import "../../../../styles/_global.scss";
 const ProjectAnalysis = () => {
   return (
     <section className={styles.container}>

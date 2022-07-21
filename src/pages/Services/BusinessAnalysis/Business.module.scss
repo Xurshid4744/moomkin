@@ -11,12 +11,24 @@
 }
 .cards {
   display: grid;
-  padding: 100px 100px 0 100px;
+  padding: 100px;
   grid-template-columns: auto auto;
   row-gap: 50px;
   column-gap: 50px;
 }
-.title{
-    padding: 100px 150px;
-    font-size: 18px;
+.title {
+  padding: 100px  150px 0 150px;
+  font-size: 18px;
+}
+.businessCards {
+  ul {
+    padding-top: 10px;
+    padding-left: 20px;
+    li {
+      list-style: outside;
+    }
+  }
+}
+.analysis{
+    display: flex;
 }

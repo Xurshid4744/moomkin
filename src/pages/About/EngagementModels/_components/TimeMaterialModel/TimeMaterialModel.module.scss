@@ -1,0 +1,62 @@
+.bcgColor {
+    background-color: #ECF0F4;
+    padding-top: 160px;
+    padding-bottom: 160px;
+
+    .detail {
+        // padding-bottom: 40px;
+        padding: 40px 160px;
+        margin-top: 0;
+        font-size: 18px;
+        line-height: 1.43;
+        font-style: normal;
+        font-weight: 300;
+        text-align: center;
+
+        @media (max-width: 880px) {
+            padding: 40px 20px;
+        }
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 0 75px;
+        gap: 30px;
+
+        @media (max-width: 1000px) {
+            grid-template-columns: auto auto;
+            grid-gap: 30px;
+            padding: 0 20px;
+        }
+
+        @media (max-width: 760px) {
+            grid-template-columns: auto;
+            grid-gap: 50px;
+        }
+
+        .flexCardParagraph {
+            margin-top: 0;
+            font-size: 18px;
+            line-height: 1.43;
+            font-style: normal;
+            font-weight: 300;
+        }
+
+        .flexCardUl {
+            li {
+                list-style: disc !important;
+                margin-top: 0;
+                font-size: 18px;
+                line-height: 1.43;
+                font-style: normal;
+                font-weight: 300;
+
+            }
+        }
+    }
+}
+
+.marginBtm {
+    margin-bottom: 200px;
+}
