@@ -45,10 +45,18 @@ const expertise = [
             <Link to="/solutions/enterprise-software-development">
               <li>Enterprise Apps</li>
             </Link>
-            <li>Startups Apps</li>
-            <li>Internet of Things</li>
-            <li>Mobile Apps</li>
-            <li>SaaS Development</li>
+            <Link to="/solutions/startups-development">
+              <li>Startups Apps</li>
+            </Link>
+            <Link to="/solutions/internet-of-things-software-development">
+              <li>Internet of Things</li>
+            </Link>
+            <Link to="/solutions/mobile-app-development">
+              <li>Mobile Apps</li>
+            </Link>
+            <Link to="/solutions/saas-development">
+              <li>SaaS Development</li>
+            </Link>
           </ul>
         </div>
         <div>
@@ -57,12 +65,20 @@ const expertise = [
               INDUSTRIES
             </li>
             <Link to="/industries/advertising-and-marketing-automation-development">
-            <li>AdTech & Marketing</li>
+              <li>AdTech & Marketing</li>
             </Link>
-            <li>EdTech & eLearning</li>
-            <li>eCommerce</li>
-            <li>Logistics & Transportation</li>
-            <li>Blockchain</li>
+            <Link to="/industries/elearning-software-development">
+              <li>EdTech & eLearning</li>
+            </Link>
+            <Link to="/industries/ecommerce-development">
+              <li>eCommerce</li>
+            </Link>
+            <Link to="/industries/logistics-software-development">
+              <li>Logistics & Transportation</li>
+            </Link>
+            <Link to="/industries/blockchain">
+              <li>Blockchain</li>
+            </Link>
           </ul>
         </div>
       </div>
@@ -71,11 +87,11 @@ const expertise = [
 ];
 const clients = [
   {
-    link: "",
+    link: "/portfolio",
     label: "Case Studies",
   },
   {
-    link: "",
+    link: "/testimonials",
     label: "Testimonials",
   },
 ];
@@ -89,29 +105,29 @@ const about = [
     label: "Engagement Models",
   },
   {
-    link: "",
+    link: "/agile-development-process",
     label: "Development Process",
   },
   {
-    link: "",
+    link: "/software-development-lifecycle",
     label: "Development Life Cycle",
   },
   {
-    link: "",
+    link: "/contacts",
     label: "Contacts",
   },
   {
-    link: "",
+    link: "/careers",
     label: "Careers",
   },
 ];
 const insights = [
   {
-    link: "",
+    link: "/blog",
     label: "Blog",
   },
   {
-    link: "",
+    link: "/all-whitepapers",
     label: "Whitepapers",
   },
 ];
@@ -142,13 +158,13 @@ export const data = [
       <Menu style={{ padding: "20px 0", marginTop: "10px" }}>
         {clients.map((a) => (
           <MenuItem style={{ fontSize: "16px", padding: "10px 20px" }}>
-            {a.label}
+            <Link to={a.link}>{a.label}</Link>
           </MenuItem>
         ))}
       </Menu>
     ),
     title: "CLIENTS",
-    link: "",
+    link: "/clients",
     icon: <DownOutlined />,
   },
   {
@@ -156,7 +172,7 @@ export const data = [
       <Menu style={{ padding: "20px 0", marginTop: "10px" }}>
         {about.map((a) => (
           <MenuItem style={{ fontSize: "16px", padding: "10px 20px" }}>
-            {a.label}
+            <Link to={a.link}>{a.label}</Link>
           </MenuItem>
         ))}
       </Menu>
@@ -171,13 +187,13 @@ export const data = [
       <Menu style={{ padding: "20px 0", marginTop: "10px" }}>
         {insights.map((a) => (
           <MenuItem style={{ fontSize: "16px", padding: "10px 20px" }}>
-            {a.label}
+            <Link to={a.link}>{a.label}</Link>
           </MenuItem>
         ))}
       </Menu>
     ),
     title: "INSIGHTS",
-    link: "",
+    link: "/insights",
     icon: <DownOutlined />,
   },
 ];
