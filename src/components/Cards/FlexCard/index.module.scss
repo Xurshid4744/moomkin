@@ -1,9 +1,21 @@
 .container {
   display: flex;
   gap: 50px;
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+  @media (max-width: 480px) {
+    .images{
+      align-self: center;
+    }
+  }
   h6 {
     font-size: 18px;
     font-weight: 800;
+    @media (max-width: 480px) {
+      text-align: center;
+    }
   }
   p {
     font-size: 18px;
