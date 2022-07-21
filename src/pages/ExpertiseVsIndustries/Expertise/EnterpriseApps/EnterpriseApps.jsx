@@ -20,10 +20,14 @@ import AI from "./../../../../assets/images/AI.svg";
 import DataScience from "./../../../../assets/images/DataScience.svg";
 import NetOfThings from "./../../../../assets/images/NetOfThings.svg";
 import MachineLearning from "./../../../../assets/images/MachineLearning.svg";
+import Discovery from "./../../../../assets/images/Discovery.svg";
+import Development from "./../../../../assets/images/Development.svg";
+import Support from "./../../../../assets/images/Support.svg";
 import Haverman from "./../../../../assets/images/Haverman.png";
 import Karbushev from "./../../../../assets/images/Karbushev.jpg";
 import BigSwiper from "../../../../components/Swipers/BigSwiper/BigSwiper";
-import ProjectAnalysis from "../../../Home/_components/ProjectAnalysis/ProjectAnalysis";
+import FlexCard from "../../../../components/Cards/FlexCard/FlexCard";
+import ProjectAnalysis from "../../../../components/ProjectAnalysis/ProjectAnalysis";
 
 const EnterpriseApps = () => {
   const cards = [
@@ -147,6 +151,27 @@ const EnterpriseApps = () => {
         "They are very sharp and have a high-quality team. I expect quality from people, and they have the kind of team I can work with. They were upfront about everything that needed to be done. I appreciated that the cost of the project turned out to be smaller than what we expected because they made some very good suggestions. They are very pleasant to work with.",
     },
   ];
+
+  const flexCard = [
+    {
+      img: Discovery,
+      title: "DISCOVERY",
+      children:
+        "Our team of business analysts, system architects, and project managers during the Discovery phase understand, define, and take down the project vision, main business processes, and project requirements",
+    },
+    {
+      img: Development,
+      title: "DEVELOPMENT",
+      children:
+        "SumatoSoft professionals work on the project implementation using the best technologies and approaches In design, development, and quality assurance.",
+    },
+    {
+      img: Support,
+      title: "SUPPORT",
+      children:
+        "We implement long-term support and maintenance to ensure the stable work of software resulting in the enhancement of our clients' businesses.",
+    },
+  ];
   return (
     <>
       <div className={styles.container}></div>
@@ -173,8 +198,19 @@ const EnterpriseApps = () => {
             </div>
           ))}
         </div>
-        <div className={`${styles.softwareProcess}globalContainer`}>
+        <div className={`${styles.softwareProcess} globalContainer`}>
           <Title title={"Our Enterprise Software Development Process"} />
+          <div className={styles.flexCard}>
+            {flexCard.map((item) => (
+              <div className={styles.asdas}>
+                <FlexCard
+                img={item.img}
+                title={item.title}
+                children={item.children}
+              />
+              </div>
+            ))}
+          </div>
         </div>
         <div className={styles.benefits}>
           <Title
@@ -183,7 +219,7 @@ const EnterpriseApps = () => {
           />
           <p className={`${styles.p} ${styles.pp}`}>
             With the help of custom enterprise applications, we help our clients
-            streamline business processes across manufacturing, <br />{" "}
+            streamline business processes across manufacturing, <br />=
             procurement, services, sales, finance, and HR management by building
             complex, customizable, scalable, and secure ERP <br /> systems.
           </p>
@@ -214,29 +250,7 @@ const EnterpriseApps = () => {
             <div>
               <BigSwiper obj={obj} />
             </div>
-            <div>
-              <Title title={"Tools & Technologies We Use"} />
-            </div>
-            <p style={{ padding: "50px" }} className={styles.p}>
-              SumatoSoft always tracks the emergence of new technologies to
-              apply in technologically advanced custom enterprise software{" "}
-              <br /> development. The latest technologies bring you lots of
-              benefits, from advanced security with blockchain to reliable
-              automation with AI and <br /> ML algorithms.
-            </p>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              {tech.map((item) => (
-                <div>
-                  <SoftwareCard img={item.img} title={item.title} />
-                </div>
-              ))}
-            </div>
+           
           </div>
         </div>
         <div>
@@ -246,9 +260,7 @@ const EnterpriseApps = () => {
           </div>
         </div>
         <div className={styles.blueAsk}>
-          
-          
-          <ProjectAnalysis/>
+          <ProjectAnalysis />
         </div>
       </div>
     </>
