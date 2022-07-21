@@ -17,7 +17,7 @@
   column-gap: 50px;
 }
 .title {
-  padding: 100px  150px 0 150px;
+  padding: 100px 150px 0 150px;
   font-size: 18px;
 }
 .businessCards {
@@ -29,12 +29,41 @@
     }
   }
 }
-.business{
-    .analysis{
-        display: flex;
-        padding: 50px 50px 0 50px;
-    }
-    .title{
-        padding: 100px;
+.business {
+  padding-top: 100px;
+  .analysis {
+    display: flex;
+    padding: 50px 50px 0 50px;
+  }
+  .title {
+    padding: 100px;
+  }
+}
+.process {
+  display: flex;
+  gap: 20px;
+}
+.processTitle {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  padding-top: 100px;
+}
+.rewards {
+    padding-top: 100px;
+  .rewardsTitle {
+    text-align: center;
+    padding: 20px 100px 20px 100px;
+   font-size: 19px;
+  }
+  .rewardsCards{
+    display: flex;
+  }
+}
+.acardionContainer{
+    .acardionTitle{
+        text-align: center;
+        font-size: 18px;
+        padding-top: 30px;
     }
 }

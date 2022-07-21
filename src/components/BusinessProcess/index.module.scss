@@ -1,0 +1,23 @@
+.container {
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  padding: 20px;
+  &:hover p {
+    transform: translateY(-50px);
+  }
+  &:hover h6{
+    color: #055684;
+  }
+  p {
+    transition: 0.5s;
+    font-size: 90px;
+    color: #e0e5ea;
+  }
+  h6 {
+    transition: 0.5s;
+    color: #015687a5;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
