@@ -1,0 +1,107 @@
+.container {
+  background-image: url(./../../../../assets/images/backgroundImg/EnterpriseApps.svg);
+  background-repeat: no-repeat;
+  height: 700px;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media (max-width: 767px) {
+    height: 850px;
+  }
+  @media (max-width: 471px) {
+    height: 900px;
+  }
+}
+.p {
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #000;
+}
+.body {
+  padding-top: 100px;
+  background-color: #ecf0f4;
+
+  .InfoCards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 200px;
+    @media (max-width: 767px) {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    @media (max-width: 471px) {
+      display: grid;
+      grid-template-columns: auto;
+      width: 400px;
+    }
+    .Cards {
+      padding: 5px;
+      margin: 10px;
+      background: white;
+    }
+  }
+  .softwareProcess {
+    margin-bottom: 20px;
+    .flexCard{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      // background: red;
+      @media (max-width: 767px) {
+        display: grid;
+        grid-template-columns: auto;
+        width: 700px;
+      }
+      @media (max-width: 471px) {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+      }
+    }
+    .asdas{
+      margin: 20px;
+      // width: 400px;
+      display: flex;
+      // background: #000;
+    }
+  }
+  .benefits {
+    background-color: #005688;
+    margin-top: 20px;
+    padding: 100px;
+    .pp {
+      color: white;
+    }
+    .blueCards {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      justify-content: center;
+      text-align: center;
+      @media (max-width: 767px) {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+      @media (max-width: 471px) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  .made {
+    padding: 100px 0 100px 0;
+  }
+  .swiper{
+    background-color: white;
+    .innerCont{
+        padding: 50px;
+        text-align: center;
+    }
+  }
+  .blueAsk{
+    background-color: #005688;
+    padding: 50px;
+}
+}
