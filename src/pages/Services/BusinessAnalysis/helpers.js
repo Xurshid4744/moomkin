@@ -227,9 +227,26 @@ export const acardion = [
     id: "2",
   },
   {
-    title: "How does ongoing Business Analysis differ from the initial Business Analysis (Discovery Phase)?",
+    title:
+      "How does ongoing Business Analysis differ from the initial Business Analysis (Discovery Phase)?",
     text: "Discovery Phase is the time when we work on the project analysis and planning. It is a very active phase, both for our clients and our team, when we perform lots of sessions. Ongoing business analysis isn’t so time-intensive we just need to support the requirements up-to-date to the business changes.",
     id: "3",
   },
- 
 ];
+export const headData = {
+  title: "Business Analysis Services",
+  children: (
+    <div className={styles.headContainer}>
+      <p className={styles.headTitle}>
+        We use the best Business Analysis practices for software development to
+        bridge a gap between the business needs and the IT team.
+      </p>
+      <ul className={styles.headUl}>
+        <li>Solution vision</li>
+        <li>Requirements description</li>
+        <li>Precise project estimation</li>
+        <li>Release planning</li>
+      </ul>
+    </div>
+  ),
+};

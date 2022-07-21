@@ -22,9 +22,11 @@ import {
   swiper,
   softCard,
   acardion,
+  headData
 } from "./helpers";
 import SoftwareCard from "../../../components/Cards/SoftwareCard/SoftwareCard";
 import Acardion from "../../../components/Acardion/Acardion";
+import HeadLine from "../../../components/HeadLine/HeadLine";
 
 const BusinessAnalysis = () => {
   return (
@@ -32,6 +34,9 @@ const BusinessAnalysis = () => {
       <section className={styles.container}>
         <div className={` ${styles.wrapper} globalContainer`}>
           <BreadCrumb menu={menu} />
+          <div className={styles.mainTitle}>
+          <HeadLine data={headData}/>
+          </div>
         </div>
       </section>
       <AnimationText
@@ -121,13 +126,16 @@ const BusinessAnalysis = () => {
           ))}
         </div>
       </section>
-      <section className={`${styles.acardionContainer} globalContainer`}>
-        <Title title={"Frequently Asked Questions"} />
-        <p className={styles.acardionTitle}>
-          Answers to commonly asked questions
-        </p>
-
-        <Acardion data={acardion} />
+      <section className={styles.acardionContainer}>
+        <div className="globalContainer">
+          <Title title={"Frequently Asked Questions"} />
+          <p className={styles.acardionTitle}>
+            Answers to commonly asked questions
+          </p>
+          <div className={styles.acardionBox}>
+            <Acardion data={acardion} />
+          </div>
+        </div>
       </section>
     </>
   );

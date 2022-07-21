@@ -1,0 +1,14 @@
+@import "../../styles/global";
+.button{
+    padding: 15px 25px;
+    background-color: $red;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    transition: 0.5s;
+    border-radius: 5px;
+    &:hover{
+        background-color: $darkRed;
+        cursor: pointer;
+    }
+}

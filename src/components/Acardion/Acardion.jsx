@@ -1,13 +1,18 @@
 import { Collapse } from "antd";
 import React from "react";
+import styles from "./Acardion.module.scss"
 const { Panel } = Collapse;
 
-const Acardion = ({data}) => (
-  <Collapse bordered={false} defaultActiveKey={["1"]}>
-    <Panel header={title} key={id}>
-      <p style={{ paddingLeft: 24 }}>{text}</p>
-    </Panel>
-  </Collapse>
+const Acardion = ({ data }) => (
+  <>
+    {data.map((item) => (
+      <Collapse bordered={false}  className={styles.collapse} expandIconPosition={"end"}>
+        <Panel header={item.title} key={item.id} className={styles.panel}>
+          <p className={styles.title}>{item.text}</p>
+        </Panel>
+      </Collapse>
+    ))}
+  </>
 );
 
 export default Acardion;

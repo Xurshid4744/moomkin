@@ -1,0 +1,17 @@
+.collapse {
+  background-color: #fff;
+  margin: 20px 0 !important;
+  padding: 20px 30px;
+  box-shadow: 0 3px 9px 0 rgb(46 50 60 / 9%);
+ 
+  .panel {
+    font-size: 20px;
+    font-weight: 800;
+    .title {
+      padding-left: 24px;
+      font-size: 16px !important;
+      font-weight: 400;
+    }
+  }
+}
+
