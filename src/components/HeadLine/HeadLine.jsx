@@ -1,9 +1,9 @@
 import React from "react";
 import Button from "../Button/Button";
 
-const HeadLine = ({ data }) => {
+const HeadLine = ({ data, sizeTitle="38px" }) => {
   const style = {
-    fontSize: "38px",
+    fontSize: sizeTitle,
     color: "#fff",
     fontWeight: "800",
   };
