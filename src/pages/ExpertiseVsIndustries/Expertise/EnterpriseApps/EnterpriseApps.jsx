@@ -204,10 +204,10 @@ const EnterpriseApps = () => {
             {flexCard.map((item) => (
               <div className={styles.asdas}>
                 <FlexCard
-                img={item.img}
-                title={item.title}
-                children={item.children}
-              />
+                  img={item.img}
+                  title={item.title}
+                  children={item.children}
+                />
               </div>
             ))}
           </div>
@@ -250,7 +250,6 @@ const EnterpriseApps = () => {
             <div>
               <BigSwiper obj={obj} />
             </div>
-           
           </div>
         </div>
         <div>
