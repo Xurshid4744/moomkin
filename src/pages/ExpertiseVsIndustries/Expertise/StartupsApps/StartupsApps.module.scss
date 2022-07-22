@@ -1,0 +1,108 @@
+.container{
+    background-image: url(./../../../../assets/images/backgroundImg/StartupsApps.svg);
+    background-repeat: no-repeat;
+    height: 700px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (max-width: 767px) {
+        height: 850px;
+      }
+      @media (max-width: 471px) {
+        height: 900px;
+      }
+    }
+.body{
+    background-color: #ECF0F4;
+    .p{
+        padding: 20px;
+        text-align: center;
+    }
+    .iner{
+        padding: 100px 0;
+        background-color: white;
+    .filter{
+        display: flex;
+        justify-content: center;
+        .infilters{
+            border-bottom: solid red;
+            margin: 0  100px;
+            font-weight: 700;
+            font-size: 24px;
+        }     
+    }
+    .FlexCard{
+        padding:  100px 0;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        div{
+            ul{
+                li{
+                    list-style: disc;
+                }
+            }
+        }
+    }   
+    .soft{
+        padding: 50px 0;
+        text-align: center;
+        padding: 20px 0px 20px 0px;
+        font-size: 18px;
+        font-weight: 300;
+        color: #000;
+    }
+    }
+    .whitebg{
+        background-color: white;
+        .p{
+            padding: 50px 0;
+            text-align: center;
+            padding: 20px 0px 20px 0px;
+            font-size: 18px;
+            font-weight: 300;
+            color: #000;
+        }
+        .reward{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+        }
+        .customWraper {
+            display: flex;
+            padding: 50px 0;
+            .title {
+              width: 50%;
+              font-size: 20px;
+              font-weight: 700;
+              font-style: normal;
+              div{
+                img{
+                    width: 30px;
+                    margin: 15px;
+                }
+              }
+            //   padding: 70px 15px 15px 20px;
+              @media (max-width: 991px) {
+                width: 100%;
+                padding-top: 0;
+                padding-bottom: 0;
+              }
+            }
+            
+          }
+    }
+    .faqs{
+        padding: 100px 0;
+        .p{
+            padding: 50px 0;
+            text-align: center;
+            padding: 20px 0px 20px 0px;
+            font-size: 18px;
+            font-weight: 300;
+            color: #000;
+        }
+    }
+    .blueAsk{
+        background-color: #005688;
+        padding: 50px;
+    }
+}

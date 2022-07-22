@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.scss";
-const FlexCard = ({ img, title, children, color, width="70", height="70" }) => {
+const FlexCard = ({ img, title, text, children, color, width="70", height="70" }) => {
   return (
     <section className={styles.container}>
       <div className={styles.images}>
@@ -8,6 +8,7 @@ const FlexCard = ({ img, title, children, color, width="70", height="70" }) => {
       </div>
       <div>
         <h6 style={{color: color}}>{title}</h6>
+        <p>{text}</p>
         <p>{children}</p>
       </div>
     </section>
