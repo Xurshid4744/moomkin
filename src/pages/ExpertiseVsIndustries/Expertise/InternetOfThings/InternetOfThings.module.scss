@@ -1,0 +1,152 @@
+.container {
+    background-image: url(./../../../../assets/images/backgroundImg/InternetOfThings.svg);
+    background-repeat: no-repeat;
+    height: 700px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (max-width: 767px) {
+      // height: 850px;
+    }
+    @media (max-width: 471px) {
+      height: 900px;
+    }
+  }
+  .body {
+    padding-top: 100px;
+    background-color: #ecf0f4;
+    .whitebg{
+        background-color: white;
+        padding: 50px 0;
+        .img{
+            display: flex;
+        }
+        .p{
+            padding: 50px 0;
+            text-align: center;
+            padding: 20px 0px 20px 0px;
+            font-size: 18px;
+            font-weight: 300;
+            color: #000;
+        }
+        .InfoCards {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            justify-content: center;
+            text-align: center;
+            padding-bottom: 200px;
+            @media (max-width: 767px) {
+              display: grid;
+              grid-template-columns: auto auto;
+            }
+            @media (max-width: 471px) {
+              display: grid;
+              grid-template-columns: auto;
+              width: 400px;
+            }
+            .Cards {
+              padding: 5px;
+              margin: 10px;
+              background: white;
+            }
+          }
+    }
+    .p{
+        padding: 50px 0;
+        text-align: center;
+        padding: 20px 0px 20px 0px;
+        font-size: 18px;
+        font-weight: 300;
+        color: #000;
+    }
+    .FlexCard{
+        padding:  100px 0;
+        display: grid;
+        text-align: start;
+        grid-template-columns: auto auto auto;
+        div{
+            ul{
+                width: 300px;
+                li{
+                    list-style: circle;
+                    margin-left: 20px;
+                }
+            }
+        }
+        @media (max-width: 767px) {
+            display: grid;
+            grid-template-columns: auto ;
+            width: 500px;
+            margin-left: 20px;
+        }
+        @media (max-width: 471px) {
+            display: grid;
+            grid-template-columns: auto;
+            width: 400px;
+            margin-left: 20px;
+        }
+    } 
+    .title{
+        padding: 50px 0 0 0 ;
+    }
+    .blueInfo{
+        background-color: #005688;
+        padding: 100px 0;
+        .blueinf{
+            text-align: center;
+            justify-content: center;
+            margin-right: 100px;
+            display: flex;
+            padding: 30px;
+            .type{
+                width: 130px;
+                color: white;
+                font-weight: 700;
+                font-size: 18px;
+                text-align: end;
+            }
+            .txt{
+                color: white;
+                font-size: 18px;
+                text-align: start;
+                padding-left: 50px;
+                width: 700px;
+            }
+        }
+    }
+    .reward{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        @media (max-width: 767px) {
+            width: 700px;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        @media (max-width: 471px) {
+            width: 400;
+            display: grid;
+            grid-template-columns: auto;
+        }
+    }
+    .faqs{
+        padding: 100px 0;
+        @media (max-width: 767px) {
+            width: 700px;
+        }
+        @media (max-width: 471px) {
+            width: 400px;
+        }
+        .p{
+            padding: 50px 0;
+            text-align: center;
+            padding: 20px 0px 20px 0px;
+            font-size: 18px;
+            font-weight: 300;
+            color: #000;
+        }
+    }
+    .blueAsk{
+        background-color: #005688;
+        padding: 50px;
+    }
+  }
