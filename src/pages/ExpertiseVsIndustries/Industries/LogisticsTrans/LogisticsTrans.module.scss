@@ -1,0 +1,115 @@
+.container1 {
+    background-image: url("../../../../assets/images/backgroundImg/Logistics&Transportation.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 900px;
+    width: 100%;
+    background-size: 3500px;
+    padding-top: 100px;
+
+    .titles {
+        display: flex;
+        flex-direction: column;
+        margin-top: 130px;
+
+        &__title {
+            font-family: 'Nunito Sans', sans-serif;
+            color: #fff;
+            font-size: 44px;
+            font-weight: 800;
+        }
+
+        &__text {
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 19px;
+            color: #fff;
+            text-align: left;
+            margin-top: 15px;
+        }
+
+        .bottom {
+            margin-top: 15px;
+
+            &__text {
+                margin-left: 15px;
+                padding-top: 6px;
+                color: #fff;
+                font-size: 18px;
+                list-style: disc !important;
+            }
+        }
+    }
+}
+
+
+.container2 {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    .texts {
+        margin-top: 25px;
+    
+        .text {
+            font-size: 18px;
+            line-height: 1.43;
+            font-style: normal;
+            font-weight: 300;
+            text-align: center;
+        }
+    }
+
+    .softCardWrapper {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        
+        .border{
+            &:nth-child(1){
+                border-bottom:1px solid#ccc ;
+                border-right:1px solid #ccc ;
+            }
+            &:nth-child(2){
+                border-bottom:1px solid #ccc ;
+                border-right:1px solid #ccc ;
+            }
+             &:nth-child(3){
+                border-bottom:1px solid #ccc ;
+            }
+            &:nth-child(4){
+                border-bottom:1px solid #ccc ;
+                border-right:1px solid #ccc ;
+            }
+            &:nth-child(5){
+                border-bottom:1px solid #ccc ;
+                border-right:1px solid #ccc ;
+            }
+            &:nth-child(6){
+                border-bottom:1px solid #ccc ;
+            }
+            &:nth-child(7){
+                border-right:1px solid #ccc ;
+            }
+            &:nth-child(8){
+                border-right:1px solid #ccc ;
+            }
+            
+        }
+    }
+}
+
+.container3 {
+    background-color: #2f3841;
+
+    .con_wrapper {
+        display: grid;
+        grid-template-columns: 40% 60%;
+
+        .titles_wrapper {
+            width: 50%;
+        }
+
+        .img_wrapper {
+            width: 50%;
+        }
+    }
+}
