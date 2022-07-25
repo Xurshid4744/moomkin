@@ -39,10 +39,12 @@ const UiUxDesign = () => {
           </div>
         </div>
       </section>
-      <AnimationText
+    <div className={styles.animation}>
+    <AnimationText
         title={animationText.title}
         subtitle={animationText.subtitle}
       />
+    </div>
       <section className={`${styles.uxDesign} globalContainer`}>
         <Title title={"Why SumatoSoft UI and UX Design Services?"} />
         <div className={styles.uxDesignBox}>
