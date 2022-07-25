@@ -293,7 +293,7 @@ const StartupsApps = () => {
               </div>
             ))}
           </div>
-          <div>
+          <div className={`${styles.soft} globalContainer`}>
             <div>
               <Title
                 title={"Software Development For Startups Process Explained"}
@@ -320,7 +320,7 @@ const StartupsApps = () => {
           <div>
             <Title title={"Our Happy Clients"} />
           </div>
-          <div className="globalContainer">
+          <div className={`${styles.swiper}globalContainer`}>
             <BigSwiper obj={obj} />
           </div>
         </div>
