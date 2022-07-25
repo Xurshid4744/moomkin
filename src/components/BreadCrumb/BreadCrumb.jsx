@@ -14,5 +14,4 @@ const BreadCrumb = ({ menu }) => (
     </Breadcrumb>
   </section>
 );
-
 export default BreadCrumb;

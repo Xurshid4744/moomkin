@@ -1,10 +1,10 @@
 import React from 'react'
 
 import styles from "./index.module.scss";
-const CompanyProfile = () => {
+const CompanyProfile = ({title}) => {
   return (
     <section className={styles.container}>
-        <h4>DOWNLOAD COMPANY'S PROFILE</h4>
+        <h4>{title}</h4>
     </section>
   )
 }
