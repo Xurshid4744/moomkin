@@ -13,6 +13,7 @@ import Yuriy from '../../../../assets/images/yuriy.jpg';
 import ProjectAnalysis from '../../../../components/ProjectAnalysis/ProjectAnalysis'
 
 import styles from './AddTechMarketing.module.scss';
+import DiscussProject from '../../../../components/DiscussProject/DiscussProject';
 
 const AddTechMarketing = () => {
   const data = [
@@ -88,10 +89,14 @@ const AddTechMarketing = () => {
               <li className={styles.bottom__text}>Sales & Marketing Analytics</li>
             </ul>
           </div>
+
+          <div className={styles.input_card}>
+            <DiscussProject />
+          </div>
         </div>
       </section>
-      <section className='globalContainer'>
-        
+      <section style={{paddingTop: "20px"}} className='globalContainer'>
+
         <Title color={"#000"} title={"Reach Your Goals With AdTech Solutions"} />
         <div className={styles.texts}>
           <p className={styles.text}>The opportunities that custom marketing software opens to businesses are endless. First of all, we help companies</p>
