@@ -17,7 +17,7 @@ import daiokan from "./../../../../assets/icons/daiokan.svg";
 import tlnika from "./../../../../assets/icons/tlnika.svg";
 import retrieval from "./../../../../assets/icons/retrieval.svg";
 import processing from "./../../../../assets/icons/processing.svg";
-import analysis from "./../../../../assets/icons/analysis.svg";
+import analysis from "./../../../../assets/icons/analysis3.svg";
 import prototype from "./../../../../assets/icons/prototype.svg";
 import healthcare from "./../../../../assets/icons/healthcare.svg";
 import retail from "./../../../../assets/icons/retail.svg";
