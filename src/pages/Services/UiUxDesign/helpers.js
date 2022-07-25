@@ -21,7 +21,7 @@ import img16 from "../../../assets/icons/english.svg";
 
 import img17 from "../../../assets/icons/Research.svg";
 import img18 from "../../../assets/icons/Research1.svg";
-import img19 from "../../../assets/icons/Analysis.svg";
+import img19 from "../../../assets/icons/Analysis2.svg";
 import img20 from "../../../assets/icons/Analysis1.svg";
 import img21 from "../../../assets/icons/Design.svg";
 import img22 from "../../../assets/icons/Design1.svg";
