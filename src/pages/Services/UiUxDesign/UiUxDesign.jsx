@@ -14,7 +14,7 @@ import {
   bigSwiper,
   animationCardLeft,
   animationCardRight,
-  acardion
+  acardion,
 } from "./helpers";
 import AnimationText from "../../../components/AnimationText/AnimationText";
 import Title from "../../../components/Title/Title";
@@ -39,12 +39,12 @@ const UiUxDesign = () => {
           </div>
         </div>
       </section>
-    <div className={styles.animation}>
-    <AnimationText
-        title={animationText.title}
-        subtitle={animationText.subtitle}
-      />
-    </div>
+      <div className={styles.animation}>
+        <AnimationText
+          title={animationText.title}
+          subtitle={animationText.subtitle}
+        />
+      </div>
       <section className={`${styles.uxDesign} globalContainer`}>
         <Title title={"Why SumatoSoft UI and UX Design Services?"} />
         <div className={styles.uxDesignBox}>
@@ -121,6 +121,7 @@ const UiUxDesign = () => {
                 img2={item.img2}
                 title={item.title}
                 ul={item.ul}
+                data-aos="fade-right"
               />
             ))}
           </div>
@@ -132,6 +133,7 @@ const UiUxDesign = () => {
                 title={item.title}
                 ul={item.ul}
                 left={true}
+                
               />
             ))}
           </div>
@@ -144,11 +146,11 @@ const UiUxDesign = () => {
           </span>
         </div>
       </section>
-      <section className={styles.questions} >
+      <section className={styles.questions}>
         <div className={`${styles.questionsBox} globalContainer`}>
           <Title title={"Frequently Asked Questions"} />
           <p>Answers to commonly asked questions</p>
-          <Acardion data={acardion}/>
+          <Acardion data={acardion} />
         </div>
       </section>
     </>

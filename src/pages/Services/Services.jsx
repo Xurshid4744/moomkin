@@ -280,7 +280,7 @@ const Services = () => {
           deliver top-notch custom web application development services - so
           don’t hesitate to contact us!
         </p>
-        <div className={styles.images}>
+        <div className={styles.images} data-aos="flip-up">
           <img src={img1} alt="" />
           <img src={img2} alt="" />
           <img src={img3} alt="" />
