@@ -34,14 +34,14 @@ const SmallSwiper = ({ obj,bg }) => {
           scrollbar={{ draggable: true }}
         >
           <SwiperSlide>
-            <div className={styles.images}>
+            <div className={styles.images} data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
               {obj1.map((item) => (
                 <img src={item.img} alt="img" />
               ))}
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className={styles.images}>
+            <div className={styles.images} data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
               {obj2.map((item) => (
                 <img src={item.img} alt="img" />
               ))}

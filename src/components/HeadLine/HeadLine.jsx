@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../Button/Button";
 
-const HeadLine = ({ data, sizeTitle="38px" }) => {
+const HeadLine = ({ data, sizeTitle = "38px", hidden = false, children }) => {
   const style = {
     fontSize: sizeTitle,
     color: "#fff",
@@ -10,9 +10,12 @@ const HeadLine = ({ data, sizeTitle="38px" }) => {
 
   return (
     <section>
-      <h2 style={{...style}}>{data.title}</h2>
+      <h2 style={{ ...style }}>{data.title}</h2>
       {data.children}
-      <Button title={"GET IN TOUCH"} />
+      {children}
+      <div hidden={hidden}>
+        <Button title={"GET IN TOUCH"} />
+      </div>
     </section>
   );
 };

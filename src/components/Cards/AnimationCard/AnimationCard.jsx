@@ -4,6 +4,8 @@ const AnimationCard = ({ img1, img2, title, ul, children, left = false }) => {
   return (
     <section
       className={left ? `${styles.containerRight}` : `${styles.container}`}
+      data-aos={left ? "fade-left" : "fade-right"}
+      data-aos-duration="900"
     >
       <div className={styles.wrapper}>
         <img src={img1} alt="" className={styles.img} />

@@ -28,8 +28,19 @@ import Karbushev from "./../../../../assets/images/Karbushev.jpg";
 import BigSwiper from "../../../../components/Swipers/BigSwiper/BigSwiper";
 import FlexCard from "../../../../components/Cards/FlexCard/FlexCard";
 import ProjectAnalysis from "../../../../components/ProjectAnalysis/ProjectAnalysis";
+import BreadCrumb from "./../../../../components/BreadCrumb/BreadCrumb";
+import HeadLine from "../../../../components/HeadLine/HeadLine";
 
 const EnterpriseApps = () => {
+  const menu = [
+    { 
+      link: "", label: "Expertise & Industries" 
+    },
+    { 
+      link: "", label: "Enterprise Software Development" 
+    }
+];
+
   const cards = [
     {
       img: EnterpriseCard,
@@ -81,6 +92,8 @@ const EnterpriseApps = () => {
     },
   ];
 
+  const headLine = [];
+
   const bluecard = [
     {
       img: ForecastingCard,
@@ -111,25 +124,6 @@ const EnterpriseApps = () => {
       title: "IMPROVED DATA SAFETY & SECURITY",
       subtitle:
         "Ensuring key enterprise data safety thanks to a common control system and security access.",
-    },
-  ];
-
-  const tech = [
-    {
-      img: AI,
-      title: "Artificial Intelligence",
-    },
-    {
-      img: DataScience,
-      title: "Big Data & Data Science",
-    },
-    {
-      img: NetOfThings,
-      title: "Machine Learning",
-    },
-    {
-      img: MachineLearning,
-      title: "Internet of Things",
     },
   ];
 
@@ -174,7 +168,43 @@ const EnterpriseApps = () => {
   ];
   return (
     <>
-      <div className={styles.container}></div>
+      <div className={styles.container}>
+        <div className={`${styles.wrapper} globalContainer`}>
+          <BreadCrumb menu={menu} />
+          <div className={styles.headLine}>
+            <HeadLine data={headLine} hidden={true} sizeTitle="45px">
+              <h1>Enterprise Software Development</h1>
+              <p>
+                With deep expertise in full-cycle corporate software
+                development, SumatoSoft improves and automates businesses with
+                unmatched enterprise applications characterized by 3 specific
+                attributes.
+              </p>
+              <div>
+                <h3>BUSINESS GOALS ORIENTATION</h3>
+                <p>
+                  Any enterprise software is to sustain continuous operation and
+                  to be utterly flexible for further scalability.
+                </p>
+              </div>
+              <div>
+                <h3>COMPLEX SOLUTIONS</h3>
+                <p>
+                  Custom Enterprise software handle big data, extensive parallel
+                  processing, and network distributed resources.
+                </p>
+              </div>
+              <div>
+                <h3>BEST PRACTICES</h3>
+                <p>
+                  Corporate software should be based on and should apply the
+                  most effective ways of building business and software.
+                </p>
+              </div>
+            </HeadLine>
+          </div>
+        </div>
+      </div>
       <div className={styles.body}>
         <div>
           <Title title={"Custom Enterprise Software We Develop"} />

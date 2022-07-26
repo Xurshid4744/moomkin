@@ -10,7 +10,7 @@ import styles from "./index.module.scss"
 
 const TinySwiper = ({data}) => {
   return (
-    <div className={styles.swiper}>
+    <div className={styles.swiper} data-aos="flip-left">
         <Swiper
             style={{
               "--swiper-navigation-color": "#fff",

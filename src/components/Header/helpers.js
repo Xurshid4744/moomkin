@@ -42,19 +42,19 @@ const expertise = [
             <li style={{ fontSize: "14px", color: "gray", cursor: "auto" }}>
               EXPERTISE
             </li>
-            <Link to="/solutions/enterprise-software-development">
+            <Link to="/solutions/enterprise-software-development" style={{color:"#000"}}>
               <li>Enterprise Apps</li>
             </Link>
-            <Link to="/solutions/startups-development">
+            <Link to="/solutions/startups-development" style={{color:"#000"}}>
               <li>Startups Apps</li>
             </Link>
-            <Link to="/solutions/internet-of-things-software-development">
+            <Link to="/solutions/internet-of-things-software-development" style={{color:"#000"}}>
               <li>Internet of Things</li>
             </Link>
-            <Link to="/solutions/mobile-app-development">
+            <Link to="/solutions/mobile-app-development" style={{color:"#000"}}>
               <li>Mobile Apps</li>
             </Link>
-            <Link to="/solutions/saas-development">
+            <Link to="/solutions/saas-development" style={{color:"#000"}}>
               <li>SaaS Development</li>
             </Link>
           </ul>
@@ -64,19 +64,19 @@ const expertise = [
             <li style={{ fontSize: "14px", color: "gray", cursor: "auto" }}>
               INDUSTRIES
             </li>
-            <Link to="/industries/advertising-and-marketing-automation-development">
+            <Link to="/industries/advertising-and-marketing-automation-development" style={{color:"#000"}}>
               <li>AdTech & Marketing</li>
             </Link>
-            <Link to="/industries/elearning-software-development">
+            <Link to="/industries/elearning-software-development" style={{color:"#000"}}>
               <li>EdTech & eLearning</li>
             </Link>
-            <Link to="/industries/ecommerce-development">
+            <Link to="/industries/ecommerce-development" style={{color:"#000"}}>
               <li>eCommerce</li>
             </Link>
-            <Link to="/industries/logistics-software-development">
+            <Link to="/industries/logistics-software-development" style={{color:"#000"}}>
               <li>Logistics & Transportation</li>
             </Link>
-            <Link to="/industries/blockchain">
+            <Link to="/industries/blockchain" style={{color:"#000"}}>
               <li>Blockchain</li>
             </Link>
           </ul>
@@ -97,7 +97,7 @@ const clients = [
 ];
 const about = [
   {
-    link: "",
+    link: "/about#team",
     label: "Team",
   },
   {
@@ -138,7 +138,7 @@ export const data = [
       <Menu style={{ padding: "20px 0", marginTop: "10px" }}>
         {services.map((a) => (
           <MenuItem style={{ fontSize: "16px", padding: "10px 20px" }}>
-            <Link to={a.link}>{a.label}</Link>
+            <Link to={a.link} style={{color:"#000"}}>{a.label}</Link>
           </MenuItem>
         ))}
       </Menu>
@@ -158,7 +158,7 @@ export const data = [
       <Menu style={{ padding: "20px 0", marginTop: "10px" }}>
         {clients.map((a) => (
           <MenuItem style={{ fontSize: "16px", padding: "10px 20px" }}>
-            <Link to={a.link}>{a.label}</Link>
+            <Link to={a.link} style={{color:"#000"}}>{a.label}</Link>
           </MenuItem>
         ))}
       </Menu>
@@ -172,7 +172,7 @@ export const data = [
       <Menu style={{ padding: "20px 0", marginTop: "10px" }}>
         {about.map((a) => (
           <MenuItem style={{ fontSize: "16px", padding: "10px 20px" }}>
-            <Link to={a.link}>{a.label}</Link>
+            <Link to={a.link} style={{color:"#000"}}>{a.label}</Link>
           </MenuItem>
         ))}
       </Menu>
@@ -181,13 +181,13 @@ export const data = [
     link: "/about",
     icon: <DownOutlined />,
   },
-  { menu: "", title: "CONTACTS", link: "" },
+  { menu: "", title: "CONTACTS", link: "/contact" },
   {
     menu: (
       <Menu style={{ padding: "20px 0", marginTop: "10px" }}>
         {insights.map((a) => (
           <MenuItem style={{ fontSize: "16px", padding: "10px 20px" }}>
-            <Link to={a.link}>{a.label}</Link>
+            <Link to={a.link} style={{color:"#000"}}>{a.label}</Link>
           </MenuItem>
         ))}
       </Menu>
@@ -197,3 +197,5 @@ export const data = [
     icon: <DownOutlined />,
   },
 ];
+
+
