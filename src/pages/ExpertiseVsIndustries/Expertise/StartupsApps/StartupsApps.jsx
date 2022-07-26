@@ -320,7 +320,7 @@ const StartupsApps = () => {
           <div>
             <Title title={"Our Happy Clients"} />
           </div>
-          <div className={`${styles.swiper}globalContainer`}>
+          <div className={`${styles.swiper} globalContainer`}>
             <BigSwiper obj={obj} />
           </div>
         </div>
