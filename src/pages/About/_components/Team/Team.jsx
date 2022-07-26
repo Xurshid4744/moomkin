@@ -43,7 +43,7 @@ const Team = () => {
     },
   ];
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="team">
         <Title title={"Management Team"}/>
     <div className={styles.cards}>
     {obj.map((item) => (

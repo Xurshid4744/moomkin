@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Dropdown } from "antd";
-import { data } from "./helpers";
+import { Collapse } from "antd";
+
+import { data} from "./helpers";
 import logo from "../../assets/images/Moomkin.png";
 import logo2 from "../../assets/images/Moomkin2.png";
 import menuWhite from "../../assets/images/menu.png";
@@ -10,6 +12,7 @@ import close from "../../assets/images/close.png";
 import styles from "./index.module.scss";
 import "../../styles/_global.scss";
 import { Link } from "react-router-dom";
+const { Panel } = Collapse;
 
 const Header = () => {
   const [change, setChange] = useState("white");
@@ -26,7 +29,65 @@ const Header = () => {
       setChange("white");
     }
   }
-
+  const resData = [
+    {
+      title: <Link to={"/services"} onClick={() => setOpen(false)}>SERVICES</Link>,
+      id: "1",
+      text: [
+        { li: "Business Analysis", link: "/services/business-analysis-services" },
+        { li: "UX/UI Design", link: "/services/ui-ux-design" },
+        { li: "Frontend & Backend Development", link: "/services/web-frontend-and-backend-development" },
+        { li: "QA and Testing", link: "/services/quality-assurance" },
+      ],
+    },
+    {
+      title: <Link to={"/industries"} onClick={() => setOpen(false)}>INDUSTRIES</Link>,
+      id: "2",
+      text: [
+        { li: "AdTech & Marketing", link: "/industries/advertising-and-marketing-automation-development" },
+        { li: "EdTech & eLearning", link: "/industries/elearning-software-development" },
+        { li: "Logistics & Transportation", link: "/industries/logistics-software-development" },
+        { li: "E-Commerce", link: "/industries/ecommerce-development" },
+      ],
+    },
+    {
+      title: <Link to={"/expertise"} onClick={() => setOpen(false)}>EXPERTISE</Link>,
+      id: "3",
+      text: [
+        { li: "Enterprise Apps", link: "/solutions/enterprise-software-development" },
+        { li: "Startups Applications", link: "/solutions/startups-development" },
+        { li: "Internet of Things", link: "/solutions/internet-of-things-software-development" },
+        { li: "Mobile Applications", link: "/solutions/mobile-app-development" },
+        { li: "SaaS Development", link: "/solutions/saas-development" },
+      ],
+    },
+    {
+      title: <Link to={"/clients"} onClick={() => setOpen(false)}>CLIENTS</Link>,
+      id: "4",
+      text: [
+        { li: "Case Studies", link: "/portfolio" },
+        { li: "Testimonials", link: "/testimonials" },
+      ],
+    },
+    {
+      title: <Link to={"/about"} onClick={() => setOpen(false)}>ABOUT US</Link>,
+      id: "5",
+      text: [
+        { li: "Team", link: "/about#team"},
+        { li: "Engagement Models", link: "/engagement-models" },
+        { li: "Development Process", link: "/agile-development-process" },
+        { li: "Contacts", link: "/contacts" },
+      ],
+    },
+    {
+      title: <Link to={"/insights"} onClick={() => setOpen(false)}>INSIGHTS</Link>,
+      id: "6",
+      text: [
+        { li: "Whitepapers", link: "/all-whitepapers" },
+        { li: "Blog", link: "/blog" },
+      ],
+    },
+  ];
   return (
     <nav
       className={
@@ -76,23 +137,22 @@ const Header = () => {
               <img src={close} alt="img" onClick={() => setOpen(false)} />
             </div>
           </div>
-          <ul className={styles.resTitles}>
-            <li>
-              <a href="/#services">SERVICES</a>
-            </li>
-            <li>
-              <a href="/#expertise">EXPERTISE</a>
-            </li>
-            <li>
-              <a href="/#numbers">NUMBERS</a>
-            </li>
-            <Link to={"/about"}>
-              <li onClick={() => setOpen(false)}>ABOUT US</li>
-            </Link>
-            <li>
-              <a href="/#services">INSIGHTS</a>
-            </li>
-          </ul>
+
+          {resData.map((item) => (
+            <Collapse
+              bordered={false}
+              expandIconPosition={"end"}
+              className={styles.collapse}
+            >
+              <Panel header={item.title} key={item.id} className={styles.panel}>
+                {item.text.map((item2) => (
+                  <Link to={item2.link}>
+                    <p onClick={() => setOpen(false)}>{item2.li}</p>
+                  </Link>
+                ))}
+              </Panel>
+            </Collapse>
+          ))}
         </div>
       </div>
     </nav>
