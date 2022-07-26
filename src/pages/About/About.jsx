@@ -1,7 +1,7 @@
 import React from "react";
+import CompanyProfile from "../../components/CompanyProfile/CompanyProfile";
 import ProjectAnalysis from "../../components/ProjectAnalysis/ProjectAnalysis";
 import SomeFacts from "../Home/_components/SomeFacts/SomeFacts";
-import CompanyProfile from "./_components/CompanyProfile/CompanyProfile";
 import Development from "./_components/Development/Development";
 
 // import styles from "./index.module.scss";
@@ -19,7 +19,7 @@ const About = () => {
       <OurClients/>
       <WayWork/>
       <ProjectAnalysis/>
-      <CompanyProfile/>
+      <CompanyProfile title={"DOWNLOAD COMPANY'S PROFILE"}/>
     </>
   );
 };

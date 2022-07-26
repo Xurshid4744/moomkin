@@ -23,7 +23,7 @@ const CustomSoft = () => {
     <section className={`globalContainer ${styles.customSoft}`}>
       <Title title={"Custom Software That Brings Value"} />
       <div className={styles.customWraper}>
-        <p className={styles.title}>
+        <p className={styles.title}  data-aos="flip-left">
           SumatoSoft, a software development company, helps to digitize
           businesses by focusing on client’s business challenges, needs, pain
           points and providing business-goals-oriented software solutions. We

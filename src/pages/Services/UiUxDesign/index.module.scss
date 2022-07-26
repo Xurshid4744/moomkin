@@ -1,0 +1,200 @@
+.container {
+  background-image: url("../../../assets/images/backgroundImg/UiUxDesign.svg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  padding-top: 100px;
+  @media (max-width: "991px") {
+    height: 650px;
+  }
+  @media (max-width: "471px") {
+    height: 800px;
+  }
+  .headLine {
+    p {
+      font-size: 18px;
+      color: #fff;
+      padding-bottom: 20px;
+      @media (max-width: "471px") {
+        font-size: 16px;
+      }
+    }
+    ul {
+      padding-left: 40px;
+      padding-bottom: 20px;
+      li {
+        list-style: outside;
+        color: #fff;
+        font-size: 18px;
+        @media (max-width: "471px") {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .headContainer {
+    padding-top: 100px;
+    @media (max-width: "991px") {
+      padding-top: 50px;
+    }
+  }
+}
+.animation {
+  @media (max-width: "991px") {
+    display: none;
+  }
+}
+.uxDesign {
+  padding-top: 100px;
+
+  .uxDesignBox {
+    display: flex;
+    padding: 50px 50px 0 50px;
+    @media (max-width: "991px") {
+      display: inline-block;
+      padding: 0;
+    }
+    @media (max-width: "471px") {
+      padding: 0;
+    }
+    .uxDesignTitle {
+      .para {
+        font-size: 18px;
+        padding-bottom: 100px;
+        @media (max-width: "471px") {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
+.uxDesignCard {
+  padding-top: 100px;
+  .uxDesignCardBox {
+    display: grid;
+    padding: 100px;
+    grid-template-columns: auto auto;
+    row-gap: 50px;
+    column-gap: 50px;
+    @media (max-width: "991px") {
+      padding: 50;
+    }
+    @media (max-width: "767px") {
+      grid-template-columns: auto;
+      padding: 50px;
+    }
+    @media (max-width: "471px") {
+      padding: 20px;
+    }
+  }
+}
+
+.benefits {
+  padding-top: 100px;
+  .benefitsTitle {
+    text-align: center;
+    font-size: 18px;
+    padding: 30px 0;
+  }
+  .benefitsBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @media (max-width: "471px") {
+      grid-template-columns: 1fr 1fr;
+    }
+    .benefitsCard {
+      img {
+        width: 60px;
+      }
+      h4 {
+        font-size: 16px;
+      }
+    }
+  }
+}
+.happyClients {
+  background-color: #ecf0f4;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.uxProcess {
+  padding: 100px 0;
+  overflow:hidden;
+  @media (max-width: "700px") {
+    display: none;
+  }
+  p {
+    font-size: 18px;
+    text-align: center;
+    padding: 30px;
+  }
+  .uxProcessBox {
+    display: flex;
+    position: relative;
+
+    .uxProcessLeft {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 50px;
+      width: 50%;
+    }
+    .uxProcessRight {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      padding-top: 100px;
+      gap: 80px;
+      width: 50%;
+    }
+    .uxProcessLine {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 110px;
+      left: 50%;
+      height: 700px;
+      width: 0.5px;
+      background-color: #0056884b;
+      @media (max-width: "767px") {
+        display: none;
+      }
+
+      span {
+        background-color: #f55;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-left: -7.5px;
+        margin-top: -5px;
+      }
+      .item2 {
+        margin-top: 100px;
+      }
+      .item3 {
+        margin-top: 140px;
+      }
+      .item4 {
+        margin-top: 130px;
+      }
+      .item5 {
+        margin-top: 110px;
+      }
+    }
+  }
+}
+.questions {
+  background-color: #ecf0f4;
+  padding: 50px 0;
+
+  .questionsBox {
+    max-width: 700px;
+    margin: 0 auto;
+    p {
+      text-align: center;
+      font-size: 18px;
+      padding: 30px;
+    }
+  }
+}

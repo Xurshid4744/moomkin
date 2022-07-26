@@ -1,0 +1,105 @@
+.container {
+  background-image: url("../../assets/images/backgroundImg/Services.svg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 620px;
+  padding-top: 120px;
+  .wrapper {
+    .headLine {
+      padding-top: 50px;
+      p {
+        font-size: 18px;
+        color: #fff;
+      }
+      ul {
+        padding-left: 40px;
+        padding-top: 20px;
+        li {
+          list-style: outside;
+          font-size: 18px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.benefits {
+  padding-top: 100px;
+  .benefitsTitle {
+    text-align: center;
+    font-size: 18px;
+    padding: 30px 0;
+  }
+  .benefitsBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @media (max-width: "471px") {
+      grid-template-columns: 1fr 1fr;
+    }
+    .benefitsCard {
+      img {
+        width: 60px;
+      }
+      h4 {
+        font-size: 16px;
+      }
+    }
+  }
+}
+.professionals {
+  p {
+    font-size: 18px;
+    text-align: center;
+    padding: 40px 0;
+  }
+  .images {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    img {
+      width: 400px;
+    }
+  }
+}
+.industry {
+  p {
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+  }
+  .industryBox {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    h4 {
+      font-size: 18px;
+      color: #2678bd;
+    }
+    img {
+      width: 70px;
+      filter: grayscale(1) brightness(250%);
+    }
+  }
+}
+
+.flexContainer {
+    background-color: #ecf0f4;
+  .flexBox {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 50px;
+    gap: 50px;
+   
+    img{
+        width: 70px ;
+    }
+    ul {
+      padding-left: 20px;
+      padding-top: 20px;
+      li {
+        list-style: outside;
+      }
+    }
+  }
+}

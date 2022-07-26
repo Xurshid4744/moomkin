@@ -1,0 +1,61 @@
+.container {
+    background-image: url('../../../../assets/images/backgroundImg/Edtech&Elearning.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 1200px;
+    width: 100%;
+    background-size: 3500px;
+    padding-top: 100px;
+
+    .titles {
+        display: flex;
+        flex-direction: column;
+        margin-top: 130px;
+
+        &__title {
+            font-family: 'Nunito Sans', sans-serif;
+            color: #fff;
+            font-size: 44px;
+            font-weight: 800;
+        }
+
+        &__text {
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 19px;
+            color: #fff;
+            text-align: left;
+            margin-top: 15px;
+        }
+
+        .bottom {
+            margin-top: 15px;
+
+            &__text {
+                margin-left: 15px;
+                padding-top: 6px;
+                color: #fff;
+                font-size: 18px;
+                list-style: disc !important;
+            }
+        }
+    }
+
+    .input_card{
+        position: relative;
+        top: 50px;
+        box-shadow: 0 0 24px 11px rgb(0 0 0 / 20%);
+    }
+}
+
+.texts {
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    .text {
+        font-size: 18px;
+        line-height: 1.43;
+        font-style: normal;
+        font-weight: 300;
+        text-align: center;
+    }
+}
