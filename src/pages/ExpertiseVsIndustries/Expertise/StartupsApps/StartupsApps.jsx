@@ -38,12 +38,30 @@ import SoftwareCard from "../../../../components/Cards/SoftwareCard/SoftwareCard
 import TinySwiper from "../../../../components/Swipers/TinySwiper/TinySwiper";
 import Acardion from "../../../../components/Acardion/Acardion";
 import ProjectAnalysis from "../../../../components/ProjectAnalysis/ProjectAnalysis";
+import BreadCrumb from "../../../../components/BreadCrumb/BreadCrumb";
+import HeadLine from "../../../../components/HeadLine/HeadLine";
 
 const StartupsApps = () => {
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {
     setIsActive((current) => !current);
+  };
+
+  const menu = [
+    {
+      link: "",
+      label: "Expertise & Industries",
+    },
+    {
+      link: "",
+      label: "Software Development for Startups",
+    },
+  ];
+
+  const headLine = {
+    title:
+      "Software Development for Startups Start fast, scale strong, become profitable.",
   };
 
   const flexCard = [
@@ -213,28 +231,47 @@ const StartupsApps = () => {
   const faqs = [
     {
       title: "What Does Minimum Viable Product Mean?",
-      text: "A Minimum Viable Product (MVP) is a software application that has enough basic features to put on the market, attract users - early adopters - and validate product ideas early in the product development cycle. MVP is an extremely popular concept in software development for startups."
+      text: "A Minimum Viable Product (MVP) is a software application that has enough basic features to put on the market, attract users - early adopters - and validate product ideas early in the product development cycle. MVP is an extremely popular concept in software development for startups.",
     },
     {
       title: "How Do You Develop an MVP?",
-      text: "When it comes to startup MVP app development, we usually advise following Lean methodology (Find, Execute, and Validate framework). Alternative steps for software development for startups are:"
+      text: "When it comes to startup MVP app development, we usually advise following Lean methodology (Find, Execute, and Validate framework). Alternative steps for software development for startups are:",
     },
     {
       title: "How long should an MVP take to build?",
-      text: "MVP software development for startups may take from 1-2 weeks to 2-3 months depending on the type of the MVP (e.g if it is just a landing page), the scope, complexity, and innovation of the business idea."
+      text: "MVP software development for startups may take from 1-2 weeks to 2-3 months depending on the type of the MVP (e.g if it is just a landing page), the scope, complexity, and innovation of the business idea.",
     },
     {
       title: "How much does an MVP development cost?",
-      text: "The average cost of an mvp software development for startups may be between $10K and $50K; as we mentioned above, pricing, as well as the time, depends entirely on the MVP concept complexity and other important factors such as platform (web, mobile, IoT), technologies used, innovations required."
+      text: "The average cost of an mvp software development for startups may be between $10K and $50K; as we mentioned above, pricing, as well as the time, depends entirely on the MVP concept complexity and other important factors such as platform (web, mobile, IoT), technologies used, innovations required.",
     },
     {
       title: "What comes after an MVP?",
-      text: "When you tested and proved your business idea with the MVP, the next step is fully-functional product development. Based on the feedback from the users, you and the app development team will be able to define what features your application should have and their priorities."
+      text: "When you tested and proved your business idea with the MVP, the next step is fully-functional product development. Based on the feedback from the users, you and the app development team will be able to define what features your application should have and their priorities.",
     },
-  ]
+  ];
   return (
     <>
-      <div className={styles.container}></div>
+      <div className={styles.container}>
+        <div className={`${styles.wrapper} globalContainer`}>
+          <BreadCrumb menu={menu} />
+          <div className={styles.headLine}>
+            <HeadLine data={headLine} hidden={true} sizeTitle="45px">
+              <p>
+                Get your startup business idea off the ground with our expertise
+                in software development, accelerate time to market and optimize
+                MVP development costs.
+              </p>
+              <ul>
+                <li>Create a product prototype</li>
+                <li>Build a startup MVP</li>
+                <li>Startup product development</li>
+                <li>Startup rescue mission</li>
+              </ul>
+            </HeadLine>
+          </div>
+        </div>
+      </div>
       <div className={styles.body}>
         <div>
           <AnimationText
@@ -320,7 +357,7 @@ const StartupsApps = () => {
           <div>
             <Title title={"Our Happy Clients"} />
           </div>
-          <div className={`${styles.swiper}globalContainer`}>
+          <div className={`${styles.swiper} globalContainer`}>
             <BigSwiper obj={obj} />
           </div>
         </div>
@@ -393,7 +430,7 @@ const StartupsApps = () => {
         <div className={`${styles.faqs} globalContainer`}>
           <Title title={"Frequently Asked Questions"} />
           <p className={styles.p}>Answers to commonly asked questions</p>
-          <Acardion data={faqs}/>
+          <Acardion data={faqs} />
         </div>
         <div className={styles.blueAsk}>
           <ProjectAnalysis />
