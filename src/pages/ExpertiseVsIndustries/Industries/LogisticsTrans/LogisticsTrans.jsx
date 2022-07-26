@@ -75,17 +75,19 @@ const LogisticsTrans = () => {
         <div className="globalContainer">
           <BreadCrumb menu={data} />
           <div className={styles.titles}>
-            <h1 className={styles.titles__title}>Ecommerce Application Development</h1>
-            <p className={styles.titles__text}>Following the latest and cutting-edge digital market trends in eCommerce software development, we provide the best shopping experience to your clients.</p>
+            <h1 className={styles.titles__title}>Logistics & Transportation Software Development</h1>
+            <p className={styles.titles__text}>Let’s streamline and optimize logistics business processes, improve transportation load and route planning, eliminate shipment issues, and reduce costs with custom logistics and transportation software tailored to the way you move things around the world.</p>
             <p className={styles.titles__text}>During custom eCommerce website development, we use brand-new ways to optimize customer service and order processes.</p>
             <ul className={styles.bottom}>
-              <li className={styles.bottom__text}>Conversion-focused app design</li>
-              <li className={styles.bottom__text}>Mobile app development</li>
-              <li className={styles.bottom__text}>Custom eCommerce solutions</li>
-              <li className={styles.bottom__text}>Fast loading speed solutions development</li>
-              <li className={styles.bottom__text}>Multilingual & multi currency support</li>
-              <li className={styles.bottom__text}>Integrations with 3rd party services</li>
-              <li className={styles.bottom__text}>SEO-ready solutions</li>
+              <li className={styles.bottom__text}>Procurement & Sourcing Management</li>
+              <li className={styles.bottom__text}>Warehouse Management</li>
+              <li className={styles.bottom__text}>Supplier Relationship Management</li>
+              <li className={styles.bottom__text}>Transportation Management</li>
+              <li className={styles.bottom__text}>Inventory Management</li>
+              <li className={styles.bottom__text}>Delivery Planning & Management</li>
+              <li className={styles.bottom__text}>Order Processing</li>
+              <li className={styles.bottom__text}>Issuance of Documents</li>
+              <li className={styles.bottom__text}>Customer Management</li>
             </ul>
           </div>
         </div>
