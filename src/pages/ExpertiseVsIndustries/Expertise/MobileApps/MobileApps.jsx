@@ -11,7 +11,7 @@ import DocumentCard from "./../../../../assets/icons/hybrid.svg";
 import RelationshipCard from "./../../../../assets/icons/progressive.svg";
 import HumanResourceCard from "./../../../../assets/icons/wearable.svg";
 import adTech from "./../../../../assets/icons/adTech.svg";
-import elearning from "./../../../../assets/icons/ELEARNING.svg";
+import elearning from "./../../../../assets/icons/elearning.svg";
 import ecommerce from "./../../../../assets/icons/ecomerce.svg";
 import transportation from "./../../../../assets/icons/transportation.svg";
 import PLANNING from "./../../../../assets/icons/PLAN.svg";
@@ -42,8 +42,21 @@ import img6 from "../../../../assets/images/it-park.jpg";
 import SmallSwiper from "../../../../components/Swipers/SmallSwiper/SmallSwiper";
 import Acardion from "../../../../components/Acardion/Acardion";
 import ProjectAnalysis from "../../../../components/ProjectAnalysis/ProjectAnalysis";
+import BreadCrumb from "../../../../components/BreadCrumb/BreadCrumb";
 
 const MobileApps = () => {
+
+  const menu = [
+    {
+      link: "",
+      label: "Expertise & Industries",
+    },
+    {
+      link: "",
+      label: "Mobile Applications Development",
+    },
+  ];
+
   const cards = [
     {
       img: EnterpriseCard,
@@ -245,6 +258,10 @@ const MobileApps = () => {
   return (
     <>
       <div className={styles.container}>
+        <div className="globalContainer">
+
+      <BreadCrumb menu={menu} />
+        </div>
         <div className={`${styles.txt} globalContainer`}>
           <div>
             <Title title={"Custom Mobile App Development"} color={"white"} />

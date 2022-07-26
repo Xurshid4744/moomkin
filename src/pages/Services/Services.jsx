@@ -13,7 +13,7 @@ import img1 from "../../assets/images/img1.jpg";
 import img2 from "../../assets/images/img2.jpg";
 import img3 from "../../assets/images/img3.jpg";
 
-import img4 from "../../assets/icons/ELEARNING.svg";
+import img4 from "../../assets/icons/elearning.svg";
 import img5 from "../../assets/icons/TRANSPORT-LOGISTICS.svg";
 import img6 from "../../assets/icons/BLOCKCHAIN.svg";
 import img7 from "../../assets/icons/MARKETING-AUTOMATION.svg";
@@ -222,7 +222,7 @@ const Services = () => {
   return (
     <>
       <section className={styles.container}>
-        <div className={`${styles.wrapper} globalContainer`}>
+      <div className={`${styles.wrapper} globalContainer`}>
           <BreadCrumb menu={menu} />
           <div className={styles.headLine}>
             <HeadLine data={headLine} hidden={true} sizeTitle="45px">

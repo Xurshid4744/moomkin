@@ -45,8 +45,27 @@ import sertificat5 from "../../../../assets/icons/sertificat-5.svg";
 import sertificat6 from "../../../../assets/icons/sertificat-6.svg";
 import Acardion from "../../../../components/Acardion/Acardion";
 import ProjectAnalysis from "../../../../components/ProjectAnalysis/ProjectAnalysis";
+import HeadLine from "../../../../components/HeadLine/HeadLine";
+import BreadCrumb from "../../../../components/BreadCrumb/BreadCrumb";
 
 const InternetOfThings = () => {
+
+  const menu = [
+    {
+      link: "",
+      label: "Expertise & Industries",
+    },
+    {
+      link: "",
+      label: "Internet of Things",
+    },
+  ];
+
+  const headLine = {
+    title:
+      "Internet of Things Software Development",
+  };
+
   const img = [
     {
       img: toyota,
@@ -204,7 +223,7 @@ const InternetOfThings = () => {
         "They are very sharp and have a high-quality team. I expect quality from people, and they have the kind of team I can work with. They were upfront about everything that needed to be done. I appreciated that the cost of the project turned out to be smaller than what we expected because they made some very good suggestions. They are very pleasant to work with.",
     },
   ];
-  
+
   const workWith = [
     {
       img: guarantee,
@@ -272,24 +291,46 @@ const InternetOfThings = () => {
   const faqs = [
     {
       title: "What is IoT development?",
-      text: 'The Internet of Things (IoT) is a network of physical objects, devices ("things") embedded with sensors, software, and other technologies. The purpose of IoT software development is to connect and exchange data with other devices and systems over the Internet'
+      text: 'The Internet of Things (IoT) is a network of physical objects, devices ("things") embedded with sensors, software, and other technologies. The purpose of IoT software development is to connect and exchange data with other devices and systems over the Internet',
     },
     {
       title: "What are the fundamental components of IoT?",
-      text: "All complete Internet of Things (IoT) systems are composed of four different components: sensors/devices, connectivity, data processing, and user interface. Some Internet of Things software development projects may require other layers (e.g. security, technology and governance standards, etc) but these four components represent the foundation of every IoT solution."
+      text: "All complete Internet of Things (IoT) systems are composed of four different components: sensors/devices, connectivity, data processing, and user interface. Some Internet of Things software development projects may require other layers (e.g. security, technology and governance standards, etc) but these four components represent the foundation of every IoT solution.",
     },
     {
       title: "Is the IoT secure?",
-      text: "Each connected IoT device collects data, sometimes very sensitive personal or business data (e.g. healthcare). Therefore, businesses using Internet of Things solutions and IoT software development companies should pay special attention to network protection. If you work with professional Internet of Things software development provider, they will be able to manage and protect you from the following top IoT security risks:"
+      text: "Each connected IoT device collects data, sometimes very sensitive personal or business data (e.g. healthcare). Therefore, businesses using Internet of Things solutions and IoT software development companies should pay special attention to network protection. If you work with professional Internet of Things software development provider, they will be able to manage and protect you from the following top IoT security risks:",
     },
     {
       title: "How Much Does IoT Development Cost?",
-      text: "The cost of IoT solutions will consist of 2 main parts - device cost and the Internet of Things software development cost (connectivity, data processing, and user interface development). Device cost will vary depending on if it is a ready-made device or sensor or an absolutely custom and innovative device. IoT software development cost will highly depend on the application scope and usually starts at $20K for an MVP."
+      text: "The cost of IoT solutions will consist of 2 main parts - device cost and the Internet of Things software development cost (connectivity, data processing, and user interface development). Device cost will vary depending on if it is a ready-made device or sensor or an absolutely custom and innovative device. IoT software development cost will highly depend on the application scope and usually starts at $20K for an MVP.",
     },
-  ]
+  ];
   return (
     <>
-      <div className={styles.container}></div>
+      <div className={styles.container}>
+        <div className={`${styles.wrapper} globalContainer`}>
+          <BreadCrumb menu={menu} />
+          <div className={styles.headLine}>
+            <HeadLine data={headLine} hidden={true} sizeTitle="45px">
+              <p>
+                SumatoSoft builds Industrial IoT solutions, IoT solutions for
+                Enterprises and Consumers around connected devices which you can
+                control and manage using the high-quality web and mobile
+                software.
+              </p>
+              <ul>
+                <li>All-around IoT Applications</li>
+                <li>Connectivity Management</li>
+                <li>Device Management</li>
+                <li>Data Visualization</li>
+                <li>IoT Data Analytics</li>
+                <li>IoT Consulting</li>
+              </ul>
+            </HeadLine>
+          </div>
+        </div>
+      </div>
       <div className={styles.body}>
         <div>
           <AnimationText
@@ -392,35 +433,59 @@ const InternetOfThings = () => {
           </div>
           <SmallSwiper obj={data} />
         </div>
-        <div className={styles.blueInfo} >
-          <Title title={"IoT Software Development Technologies"} color={"white"}/>
+        <div className={styles.blueInfo}>
+          <Title
+            title={"IoT Software Development Technologies"}
+            color={"white"}
+          />
           <div className={`${styles.blueinf} globalContainer`}>
             <div className={styles.type}>Programming languages:</div>
             <div className={styles.txt}>C/C++, Python, Ruby, JavaScript</div>
           </div>
           <div className={`${styles.blueinf} globalContainer`}>
             <div className={styles.type}>Development frameworks:</div>
-            <div className={styles.txt}>Node.Js (Node-Red for rapid prototyping), Ot, IoT.js, Device.js, Eclipse IoT (Kura, SmartHome), AngularJS</div>
+            <div className={styles.txt}>
+              Node.Js (Node-Red for rapid prototyping), Ot, IoT.js, Device.js,
+              Eclipse IoT (Kura, SmartHome), AngularJS
+            </div>
           </div>
           <div className={`${styles.blueinf} globalContainer`}>
             <div className={styles.type}>Platforms:</div>
-            <div className={styles.txt}>Amazon Web Services IoT, Microsoft Azure IoT, Google Cloud IoT, openHAB, IBM Bluemix IoT,</div>
+            <div className={styles.txt}>
+              Amazon Web Services IoT, Microsoft Azure IoT, Google Cloud IoT,
+              openHAB, IBM Bluemix IoT,
+            </div>
           </div>
           <div className={`${styles.blueinf} globalContainer`}>
             <div className={styles.type}>Communication protocols:</div>
-            <div className={styles.txt}>Wi-Fi, Cellular (2G, 3G, 4G, LTE), Bluetooth, BLE, ZigBee, NFC, RFID, Z-Wave, USB, IPv6, CoAP, MQTT, EIB, AMQP, HTTP/HTTPS, DALI, 1-wire, Siemens (S7)</div>
+            <div className={styles.txt}>
+              Wi-Fi, Cellular (2G, 3G, 4G, LTE), Bluetooth, BLE, ZigBee, NFC,
+              RFID, Z-Wave, USB, IPv6, CoAP, MQTT, EIB, AMQP, HTTP/HTTPS, DALI,
+              1-wire, Siemens (S7)
+            </div>
           </div>
           <div className={`${styles.blueinf} globalContainer`}>
             <div className={styles.type}>Hardware:</div>
-            <div className={styles.txt}>Raspberry Pi, Arduino, Beacons, Microcontrollers (ESP32, ESP8266), Google TPU, FPGA controllers</div>
+            <div className={styles.txt}>
+              Raspberry Pi, Arduino, Beacons, Microcontrollers (ESP32, ESP8266),
+              Google TPU, FPGA controllers
+            </div>
           </div>
           <div className={`${styles.blueinf} globalContainer`}>
             <div className={styles.type}>Sensor Technology:</div>
-            <div className={styles.txt}>Analog, ADC, I2C, 1-Wire, RF433, various analog and digital sensors, compatible with Ardiuno and Raspberry Pi, custom sensor R&D</div>
+            <div className={styles.txt}>
+              Analog, ADC, I2C, 1-Wire, RF433, various analog and digital
+              sensors, compatible with Ardiuno and Raspberry Pi, custom sensor
+              R&D
+            </div>
           </div>
           <div className={`${styles.blueinf} globalContainer`}>
             <div className={styles.type}>3d-party APIs:</div>
-            <div className={styles.txt}>Google Assistant, Google Home (Actions on Google), Google Vision, Apple HomeKit, MI Light, Cortana, Alexa Voice Service, Philips Hue,  Android Things</div>
+            <div className={styles.txt}>
+              Google Assistant, Google Home (Actions on Google), Google Vision,
+              Apple HomeKit, MI Light, Cortana, Alexa Voice Service, Philips
+              Hue, Android Things
+            </div>
           </div>
         </div>
         <div className={styles.whitebg}>
@@ -443,11 +508,11 @@ const InternetOfThings = () => {
               </div>
             ))}
           </div>
-          </div>
-          <div className={`${styles.faqs} globalContainer`}>
+        </div>
+        <div className={`${styles.faqs} globalContainer`}>
           <Title title={"Frequently Asked Questions"} />
           <p className={styles.p}>Answers to commonly asked questions</p>
-          <Acardion data={faqs}/>
+          <Acardion data={faqs} />
         </div>
         <div className={styles.blueAsk}>
           <ProjectAnalysis />

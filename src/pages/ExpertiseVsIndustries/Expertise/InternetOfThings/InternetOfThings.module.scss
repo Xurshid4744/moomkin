@@ -5,6 +5,25 @@
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 120px 0;
+    .wrapper {
+        .headLine {
+          padding-top: 50px;
+          p {
+            font-size: 18px;
+            color: #fff;
+          }
+          ul {
+            padding-left: 40px;
+            padding-top: 20px;
+            li {
+              list-style: outside;
+              font-size: 18px;
+              color: #fff;
+            }
+          }
+        }
+      }
     @media (max-width: 767px) {
       // height: 850px;
     }
