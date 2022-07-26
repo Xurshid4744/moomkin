@@ -16,7 +16,7 @@ import ecommerce from "./../../../../assets/icons/ecomerce.svg";
 import transportation from "./../../../../assets/icons/transportation.svg";
 import PLANNING from "./../../../../assets/icons/PLAN.svg";
 import PROTOTYPING from "./../../../../assets/icons/PROTO.svg";
-import DESIGN from "./../../../../assets/icons/Design.svg";
+import Design from "./../../../../assets/icons/Design.svg";
 import DEVELOPMENT from "./../../../../assets/icons/DEVELOPMENT.svg";
 import TESTING from "./../../../../assets/icons/TESTING.svg";
 import SUPPORT from "./../../../../assets/icons/SUPPORT.svg";
@@ -143,7 +143,7 @@ const MobileApps = () => {
         "Development of early prototypes or a minimal viable product (MVP) helps to test the application concept and groom the backlog.",
     },
     {
-      img: DESIGN,
+      img: Design,
       title: "DESIGN",
       subtitle:
         "At this stage the concept is elaborated, the application architecture is designed, and the requirements are specified in detail.",
@@ -287,7 +287,7 @@ const MobileApps = () => {
           </div>
           <Title title={"Custom Mobile App Development For Industries"} />
           <p className={`${styles.p} globalContainer`}>
-            We build only industry-relevant solutions that increas business
+            We build only industry-relevant solutions that increase business
             effectiveness and efficiency
           </p>
           <div className={`${styles.mobile} globalContainer`}>
