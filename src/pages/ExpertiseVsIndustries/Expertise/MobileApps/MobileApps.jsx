@@ -287,7 +287,7 @@ const MobileApps = () => {
           </div>
           <Title title={"Custom Mobile App Development For Industries"} />
           <p className={`${styles.p} globalContainer`}>
-            We build only industry-relevant solutions that increase business
+            We build only industry-relevant solutions that increas business
             effectiveness and efficiency
           </p>
           <div className={`${styles.mobile} globalContainer`}>
