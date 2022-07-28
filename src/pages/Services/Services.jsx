@@ -38,10 +38,29 @@ import img23 from "../../assets/icons/DevelopmentServices3.svg";
 import img24 from "../../assets/icons/DevelopmentServices4.svg";
 import img25 from "../../assets/icons/DevelopmentServices5.svg";
 
+import img26 from "../../assets/icons/3RD-PARTY.svg";
+import img27 from "../../assets/icons/HIGHEST-SECURITY.svg";
+import img28 from "../../assets/icons/CLOUD-BASED.svg";
+import img29 from "../../assets/icons/MICROSERVICES-BASED.svg";
+import img30 from "../../assets/icons/UNIVERSAL-ACCESSIBILITY.svg";
+
+import img31 from "../../assets/icons/sertificat-1.svg";
+import img32 from "../../assets/icons/sertificat-2.svg";
+import img33 from "../../assets/icons/sertificat-3.svg";
+import img34 from "../../assets/icons/sertificat-4.svg";
+import img35 from "../../assets/icons/sertificat-5.svg";
+import img36 from "../../assets/icons/sertificat-6.svg";
+
+import img37 from "../../assets/icons/Research3.svg";
+import img38 from "../../assets/icons/Quality-Assurance.svg";
+import img39 from "../../assets/icons/Deployment.svg";
+import img40 from "../../assets/icons/Design.svg";
+
 import DiscussProject from "../../components/DiscussProject/DiscussProject";
 import BigSwiper from "../../components/Swipers/BigSwiper/BigSwiper";
 import SmallSwiper from "../../components/Swipers/SmallSwiper/SmallSwiper";
 import FlexCard from "../../components/Cards/FlexCard/FlexCard";
+import AnimationCard from "../../components/Cards/AnimationCard/AnimationCard";
 
 const Services = () => {
   const menu = [{ link: "", label: "Services" }];
@@ -218,11 +237,149 @@ const Services = () => {
       },
     },
   ];
+  const features = [
+    {
+      img: img26,
+      title: "3RD PARTY SERVICES INTEGRATION",
+      subtitle:
+        "Web applications are easily connected to multiple third-party services, starting with payment gateways and ending with business automation services.",
+    },
+    {
+      img: img27,
+      title: "HIGHEST SECURITY",
+      subtitle:
+        "During custom web application development, we focus on making our web apps highly secured by implementing role-based permission systems, transactions and data sharing protection.",
+    },
+    {
+      img: img28,
+      title: "CLOUD-BASED",
+      subtitle:
+        "In addition to the modular architectural approach, cloud-native architecture implies the adoption of cloud services, cutting-edge real-time technologies and leveraging managed services from cloud vendors.",
+    },
+    {
+      img: img29,
+      title: "MICROSERVICES-BASED APPLICATIONS",
+      subtitle:
+        "We follow a microservices-based architectural approach that leads to creating independent reusable software modules which communicate via APIs to external and internal services.",
+    },
+    {
+      img: img30,
+      title: "UNIVERSAL ACCESSIBILITY",
+      subtitle:
+        "Users can access functionality and content of custom web applications from anywhere, anytime and from any device. All the data and content are synchronized in real time.",
+    },
+  ];
+  const softCard = [
+    {
+      img: img31,
+      title: "Recognized by Clutch.co",
+    },
+    {
+      img: img32,
+      title: "AMAZON Consulting Partner",
+    },
+    {
+      img: img33,
+      title: "Recognized by GoodFirms.co",
+    },
+    {
+      img: img34,
+      title: "Recognized by TopDigital.Agency",
+    },
+    {
+      img: img35,
+      title: "Recognized by  TechReviewer.co",
+    },
+    {
+      img: img36,
+      title: "Hign Tech Park Resident",
+    },
+  ];
+  const animationCardLeft = [
+    {
+      img1: img37,
+      img2: "",
+      title: "Research",
+      ul: [
+        { li: "Interview stakeholders" },
+        { li: "Key apps competitor analysis" },
+        { li: "Marketing and user analysis" },
+      ],
+    },
+    {
+      img1: img38,
+      img2: "",
+      title: "Design",
+      ul: [
+        { li: "Develop Information Architecture" },
+        { li: "Wireframing" },
+        { li: "Prototyping" },
+        { li: "Animation of the interfaces" },
+      ],
+    },
+    {
+      img1: img38,
+      img2: "",
+      title: "Quality Assurance",
+      ul: [
+        { li: "Functional testing" },
+        { li: "Non-functional testing" },
+        { li: "Change testing" },
+      ],
+    },
+    {
+      img1: img38,
+      img2: "",
+      title: "Post-release support",
+      ul: [
+        { li: "Modification of existing functionality" },
+        { li: "New features development" },
+        { li: "Libraries and frameworks update" },
+      ],
+    },
+  ];
+
+  const animationCardRight = [
+    {
+      img1: img40,
+      img2: " ",
+      title: "Discovery",
+      ul: [
+        { li: "Creating of a shared product vision" },
+        {
+          li: "Development of a requirements specification with release priorities",
+        },
+        { li: "Preparation of a roadmap with a release timeline" },
+        { li: "Building of an app architecture" },
+      ],
+    },
+    {
+      img1: img39,
+      img2: "",
+      title: "Programming",
+      ul: [
+        { li: "Backend development" },
+        { li: "Frontend development" },
+        { li: "Performance optimization" },
+        { li: "API Integration" },
+      ],
+    },
+    {
+      img1: img39,
+      img2: "",
+      title: "Deployment",
+      ul: [
+        { li: "App Store" },
+        { li: "Google Play" },
+        { li: "Software implementation" },
+      ],
+    },
+  ];
 
   return (
     <>
       <section className={styles.container}>
-      <div className={`${styles.wrapper} globalContainer`}>
+        <div className={`${styles.wrapper} globalContainer`}>
           <BreadCrumb menu={menu} />
           <div className={styles.headLine}>
             <HeadLine data={headLine} hidden={true} sizeTitle="45px">
@@ -330,6 +487,86 @@ const Services = () => {
               </FlexCard>
             ))}
           </div>
+        </div>
+      </section>
+      <section className={styles.features}>
+        <div className={`${styles.featuresBox} globalContainer`}>
+          <Title
+            title={"Our Custom Web Application Development Features"}
+            color={"#fff"}
+          />
+          <div className={styles.featuresCards}>
+            {features.map((item) => (
+              <SoftwareCard
+                img={item.img}
+                title={item.title}
+                subtitle={item.subtitle}
+                key={item.title}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className={`${styles.rewards} globalContainer`}>
+        <Title title={"Rewards & Recognitions"} />
+        <p className={styles.rewardsTitle}>
+          SumatoSoft has been recognized by the leading analytics agencies
+          working with the best software development companies from all over the
+          world. Our values and partners help us to provide the best services in
+          the field.
+        </p>
+        <div className={styles.rewardsCards}>
+          {softCard.map((item) => (
+            <SoftwareCard
+              img={item.img}
+              subtitle={item.title}
+              clas={false}
+              key={item.title}
+            />
+          ))}
+        </div>
+      </section>
+
+      <section className={`${styles.uxProcess} globalContainer`}>
+        <Title title={"UI and UX Design Process Explained"} />
+        <p>
+          At SumatoSoft, we apply a full range of UI/UX services to formulate
+          effective customer retention strategies. We help brands to define
+          their image through UI design services and have a lasting impact,
+          driving and motivating users to buy your product or services by
+          providing a great user experience. User experience design services
+          include:
+        </p>
+        <div className={`${styles.uxProcessBox} globalContainer`}>
+          <div className={styles.uxProcessLeft}>
+            {animationCardLeft.map((item) => (
+              <AnimationCard
+                img1={item.img1}
+                img2={item.img2}
+                title={item.title}
+                ul={item.ul}
+                data-aos="fade-right"
+              />
+            ))}
+          </div>
+          <div className={styles.uxProcessRight}>
+            {animationCardRight.map((item) => (
+              <AnimationCard
+                img1={item.img1}
+                img2={item.img2}
+                title={item.title}
+                ul={item.ul}
+                left={true}
+              />
+            ))}
+          </div>
+          <span className={styles.uxProcessLine}>
+            <span className={styles.item1}></span>
+            <span className={styles.item2}></span>
+            <span className={styles.item3}></span>
+            <span className={styles.item4}></span>
+            <span className={styles.item5}></span>
+          </span>
         </div>
       </section>
     </>
