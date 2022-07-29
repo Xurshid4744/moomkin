@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.scss";
-const AnimationCard = ({ img1, img2, title, ul, children, left = false }) => {
+const AnimationCard = ({ img1, img2, title, text, ul, children, left = false }) => {
   return (
     <section
       className={left ? `${styles.containerRight}` : `${styles.container}`}
@@ -13,6 +13,7 @@ const AnimationCard = ({ img1, img2, title, ul, children, left = false }) => {
         <div>
           <h4>{title}</h4>
           <ul>
+            <p>{text}</p>
             {ul.map((item) => (
               <li>{item.li}</li>
             ))}
