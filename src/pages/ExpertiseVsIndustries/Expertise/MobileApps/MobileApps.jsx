@@ -383,7 +383,6 @@ const MobileApps = () => {
         </div>
         <div className={`${styles.faqs} globalContainer`}>
           <Title title={"Frequently Asked Questions"} />
-          {/* <p className={styles.p}>Answers to commonly asked questions</p> */}
           <Acardion data={faqs}/>
         </div>
         <div className={styles.blueAsk}>

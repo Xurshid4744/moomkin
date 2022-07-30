@@ -26,22 +26,26 @@
     }
 }
 
-@media screen and (max-width: 820px) {
+
+
+@media screen and (max-width: 991px) {
     .cards_wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        width: 90%;
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        flex-wrap: wrap;
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 767px) {
     .cards_wrapper {
-        display: inline;
-        text-align: left;
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
+}
 
-    .ecommere_ul {
-        padding-left: 20px;
+@media screen and (max-width: 471px) {
+    .cards_wrapper {
+        display: grid;
+        grid-template-columns: 100%;
     }
 }
