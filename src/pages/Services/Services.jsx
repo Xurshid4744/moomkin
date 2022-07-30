@@ -61,6 +61,8 @@ import BigSwiper from "../../components/Swipers/BigSwiper/BigSwiper";
 import SmallSwiper from "../../components/Swipers/SmallSwiper/SmallSwiper";
 import FlexCard from "../../components/Cards/FlexCard/FlexCard";
 import AnimationCard from "../../components/Cards/AnimationCard/AnimationCard";
+import ProjectAnalysis from "../../components/ProjectAnalysis/ProjectAnalysis";
+import Acardion from "../../components/Acardion/Acardion";
 
 const Services = () => {
   const menu = [{ link: "", label: "Services" }];
@@ -375,6 +377,28 @@ const Services = () => {
       ],
     },
   ];
+  const acardion = [
+    {
+        title:"What is custom web application?",
+        text: "No answers",
+        id: "1"
+    },
+    {
+        title:"What is custom application development services?",
+        text: "No answers",
+        id: "2"
+    },
+    {
+        title:"What does web development services include?",
+        text: "No answers",
+        id: "3"
+    },
+    {
+        title:"Why Moomkin?",
+        text: "No answers",    
+        id: "4"
+    },
+]
 
   return (
     <>
@@ -382,7 +406,7 @@ const Services = () => {
         <div className={`${styles.wrapper} globalContainer`}>
           <BreadCrumb menu={menu} />
           <div className={styles.headLine}>
-            <HeadLine data={headLine} hidden={true} sizeTitle="45px">
+            <HeadLine data={headLine} hidden={true} sizeTitle="45px" >
               <p>
                 Using best IT innovations, we develop custom web and mobile
                 applications that increase our customers’ competitive benefits
@@ -566,7 +590,17 @@ const Services = () => {
             <span className={styles.item3}></span>
             <span className={styles.item4}></span>
             <span className={styles.item5}></span>
+            <span className={styles.item6}></span>
+            <span className={styles.item7}></span>
           </span>
+        </div>
+      </section>
+      <ProjectAnalysis/>
+      <section className={styles.questions}>
+        <div className={`${styles.questionsBox} globalContainer`}>
+          <Title title={"Frequently Asked Questions"} />
+          <p>Answers to commonly asked questions</p>
+          <Acardion data={acardion} />
         </div>
       </section>
     </>

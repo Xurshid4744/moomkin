@@ -5,12 +5,19 @@
   background-repeat: no-repeat;
   height: 620px;
   padding-top: 120px;
+  @media (max-width: 471px) {
+    padding-top: 80px;
+    height: 650px;
+  }
   .wrapper {
     .headLine {
       padding-top: 50px;
       p {
         font-size: 18px;
         color: #fff;
+        @media (max-width: 471px) {
+          font-size: 16px;
+        }
       }
       ul {
         padding-left: 40px;
@@ -56,9 +63,36 @@
   .images {
     padding: 40px 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
+    @media (max-width: 991px) {
+      grid-template-columns: auto auto;
+      justify-content: center;
+      gap: 30px;
+    }
+    @media (max-width: 471px) {
+      grid-template-columns: auto;
+      justify-content: center;
+      gap: 30px;
+    }
     img {
       width: 400px;
+      @media (max-width: 1350px) {
+        width: 500px;
+        &:last-child {
+          display: none;
+        }
+      }
+      @media (max-width: 471px) {
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+      @media (max-width: 991px) {
+        width: 400px;
+      }
+      @media (max-width: 767px) {
+        width: 300px;
+      }
     }
   }
 }
@@ -71,7 +105,12 @@
   .industryBox {
     display: grid;
     grid-template-columns: auto auto auto;
-
+    @media (max-width: 991px) {
+      grid-template-columns: auto auto;
+    }
+    @media (max-width: 471px) {
+      grid-template-columns: auto;
+    }
     h4 {
       font-size: 18px;
       color: #2678bd;
@@ -90,7 +129,9 @@
     grid-template-columns: auto auto;
     padding: 50px;
     gap: 50px;
-
+    @media (max-width: 471px) {
+      grid-template-columns: auto;
+    }
     img {
       width: 70px;
     }
@@ -109,6 +150,17 @@
     padding-top: 50px;
     .featuresCards {
       display: flex;
+      @media (max-width: 991px) {
+        display: grid;
+        grid-template-columns: auto auto auto;
+      }
+      @media (max-width: 767px) {
+        grid-template-columns: auto auto;
+      }
+      @media (max-width: 991px) {
+        grid-template-columns: auto;
+      }
+
       img {
         width: 60px;
       }
@@ -127,11 +179,14 @@
   .rewardsTitle {
     text-align: center;
     padding: 20px 100px 20px 100px;
+    @media (max-width: 767px) {
+      padding: 20px;
+    }
     font-size: 19px;
     @media (max-width: "471px") {
-       padding: 0;
-       padding-top: 20px;
-       font-size: 16px;
+      padding: 0;
+      padding-top: 20px;
+      font-size: 16px;
     }
   }
   .rewardsCards {
@@ -152,7 +207,7 @@
 
 .uxProcess {
   padding: 100px 0;
-  overflow:hidden;
+  overflow: hidden;
   @media (max-width: "700px") {
     display: none;
   }
@@ -179,7 +234,9 @@
       padding-top: 100px;
       gap: 40px;
       width: 50%;
-      
+      @media (max-width: 991px) {
+        padding-top: 65px;
+      }
     }
     .uxProcessLine {
       position: absolute;
@@ -187,7 +244,7 @@
       flex-direction: column;
       top: 110px;
       left: 50%;
-      height: 700px;
+      height: 900px;
       width: 0.5px;
       background-color: #0056884b;
       @media (max-width: "767px") {
@@ -207,13 +264,45 @@
       }
       .item3 {
         margin-top: 130px;
+        @media (max-width: 991px) {
+          margin-top: 140px;
+        }
       }
       .item4 {
-        margin-top: 160px;
+        margin-top: 125px;
+        @media (max-width: 991px) {
+          margin-top: 150px;
+        }
       }
       .item5 {
         margin-top: 110px;
+        @media (max-width: 991px) {
+          margin-top: 100px;
+        }
       }
+      .item6 {
+        margin-top: 110px;
+        @media (max-width: 991px) {
+          margin-top: 130px;
+        }
+      }
+      .item7 {
+        margin-top: 110px;
+      }
+    }
+  }
+}
+.questions {
+  background-color: #ecf0f4;
+  padding: 50px 0;
+
+  .questionsBox {
+    max-width: 700px;
+    margin: 0 auto;
+    p {
+      text-align: center;
+      font-size: 18px;
+      padding: 30px;
     }
   }
 }
