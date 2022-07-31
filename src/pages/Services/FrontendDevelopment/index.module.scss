@@ -1,0 +1,209 @@
+.container {
+  background-image: url("../../../assets/images/backgroundImg/Frontend&BackendDevelopment.svg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+  padding-top: 120px;
+  @media (max-width: 471px) {
+    padding-top: 80px;
+    height: 680px;
+  }
+  @media (max-width: 991px) {
+    height: 580px;
+  }
+  .wrapper {
+    .headLine {
+      padding-top: 50px;
+      p {
+        font-size: 18px;
+        color: #fff;
+        @media (max-width: 471px) {
+          font-size: 16px;
+        }
+      }
+      ul {
+        padding-left: 40px;
+        padding-top: 20px;
+        li {
+          list-style: outside;
+          font-size: 18px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.benefits {
+  padding-top: 100px;
+  .benefitsTitle {
+    text-align: center;
+    font-size: 18px;
+    padding: 30px 0;
+  }
+  .benefitsBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @media (max-width: "471px") {
+      grid-template-columns: 1fr 1fr;
+    }
+    .benefitsCard {
+      img {
+        width: 60px;
+      }
+      h4 {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.flexContainer {
+  .flexBox {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 50px;
+    gap: 50px;
+    @media (max-width: 471px) {
+      grid-template-columns: auto;
+    }
+    img {
+      width: 70px;
+    }
+  }
+}
+.technological {
+  background-color: #005688;
+  padding: 30px 0;
+  .technologicalBox {
+    padding-top: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media (max-width: 471px) {
+     flex-direction: column;
+     gap: 10px;
+    }
+  }
+}
+.uxProcess {
+  padding: 100px 0;
+  overflow: hidden;
+  @media (max-width: "700px") {
+    display: none;
+  }
+  .uxProcessBox {
+    display: flex;
+    position: relative;
+    padding-top: 50px;
+    .uxProcessLeft {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 50px;
+      width: 50%;
+    }
+    .uxProcessRight {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      padding-top: 240px;
+      gap: 150px;
+      width: 50%;
+      @media (max-width: 991px) {
+        padding-top: 200px;
+      }
+    }
+    .uxProcessLine {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 210px;
+      left: 50%;
+      height: 900px;
+      width: 0.5px;
+      background-color: #0056884b;
+      @media (max-width: "767px") {
+        display: none;
+      }
+      @media (max-width: "991px") {
+        top: 280px;
+      }
+
+      span {
+        background-color: #f55;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-left: -7.5px;
+        margin-top: -5px;
+      }
+      .item2 {
+        margin-top: 180px;
+        @media (max-width: 991px) {
+          margin-top: 105px;
+        }
+      }
+      .item3 {
+        margin-top: 170px;
+        @media (max-width: 991px) {
+          margin-top: 380px;
+        }
+      }
+      .item4 {
+        margin-top: 240px;
+        @media (max-width: 991px) {
+          margin-top: 110px;
+        }
+      }
+    }
+  }
+}
+.rewards {
+  padding-top: 100px;
+  .rewardsTitle {
+    text-align: center;
+    padding: 20px 100px 20px 100px;
+    @media (max-width: 767px) {
+      padding: 20px;
+    }
+    font-size: 19px;
+    @media (max-width: "471px") {
+      padding: 0;
+      padding-top: 20px;
+      font-size: 16px;
+    }
+  }
+  .rewardsCards {
+    display: flex;
+    @media (max-width: "991px") {
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
+    @media (max-width: "471px") {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    @media (max-width: "391px") {
+      grid-template-columns: auto;
+    }
+  }
+}
+.questions {
+  background-color: #ecf0f4;
+  padding: 50px 0;
+
+  .questionsBox {
+    max-width: 700px;
+    margin: 0 auto;
+    p {
+      text-align: center;
+      font-size: 18px;
+      padding: 30px;
+    }
+  }
+}
+

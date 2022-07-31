@@ -211,7 +211,7 @@
   @media (max-width: "700px") {
     display: none;
   }
-  p {
+  .uxTitle {
     font-size: 18px;
     text-align: center;
     padding: 30px;
@@ -231,8 +231,8 @@
       display: flex;
       align-items: flex-end;
       flex-direction: column;
-      padding-top: 100px;
-      gap: 40px;
+      padding-top: 90px;
+      gap: 30px;
       width: 50%;
       @media (max-width: 991px) {
         padding-top: 65px;

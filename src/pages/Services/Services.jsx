@@ -185,7 +185,7 @@ const Services = () => {
 
       <section className={`${styles.uxProcess} globalContainer`}>
         <Title title={"UI and UX Design Process Explained"} />
-        <p>
+        <p className={styles.uxTitle}>
           At SumatoSoft, we apply a full range of UI/UX services to formulate
           effective customer retention strategies. We help brands to define
           their image through UI design services and have a lasting impact,
