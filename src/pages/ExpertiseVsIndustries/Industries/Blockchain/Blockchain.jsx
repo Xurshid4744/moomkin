@@ -297,19 +297,21 @@ const Blockchain = () => {
       <section className={styles.container6}>
         <div className="globalContainer">
           <Title color={"white"} title={"Technologies We Work With"} />
-          <div className={styles.img6_wrapper}>
-            <img src={blockcahain4cardImg1} alt="icon" />
-            <img src={blockcahain4cardImg2} alt="icon" />
-            <img src={blockcahain4cardImg3} alt="icon" />
-            <img src={blockcahain4cardImg4} alt="icon" />
-            <img src={blockcahain4cardImg5} alt="icon" />
-            <img src={blockcahain4cardImg6} alt="icon" />
-            <img src={blockcahain4cardImg7} alt="icon" />
-          </div>
-          <div className={styles.img6_wrapper2}>
-            <img src={blockcahain4cardImg8} alt="icon" />
-            <img src={blockcahain4cardImg9} alt="icon" />
-            <img src={blockcahain4cardImg10} alt="icon" />
+          <div className={styles.img66_wrapper}>
+            <div className={styles.img6_wrapper}>
+              <img src={blockcahain4cardImg1} alt="icon" />
+              <img src={blockcahain4cardImg2} alt="icon" />
+              <img src={blockcahain4cardImg3} alt="icon" />
+              <img src={blockcahain4cardImg4} alt="icon" />
+              <img src={blockcahain4cardImg5} alt="icon" />
+              <img src={blockcahain4cardImg6} alt="icon" />
+              <img src={blockcahain4cardImg7} alt="icon" />
+            </div>
+            <div className={styles.img6_wrapper2}>
+              <img src={blockcahain4cardImg8} alt="icon" />
+              <img src={blockcahain4cardImg9} alt="icon" />
+              <img src={blockcahain4cardImg10} alt="icon" />
+            </div>
           </div>
         </div>
       </section>
