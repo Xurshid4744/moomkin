@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.scss";
-const WorkersCard = ({ img, name, position, job, title }) => {
+const WorkersCard = ({ img, name, position, job, title,children }) => {
   return (
     <section className={styles.container}>
       <div className={styles.workersAbout}>
@@ -9,7 +9,8 @@ const WorkersCard = ({ img, name, position, job, title }) => {
         <p>{position}</p>
         <p>{job}</p>
       </div>
-      <div className={styles.title}>{title}</div>
+      <h5 className={styles.title}>{title}</h5>
+      {children}
     </section>
   );
 };
