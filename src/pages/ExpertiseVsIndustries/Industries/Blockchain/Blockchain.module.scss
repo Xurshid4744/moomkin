@@ -4,7 +4,7 @@
     background-position: top;
     height: 600px;
     width: 100%;
-    background-size: 1400px;
+    background-size: 1500px;
     padding-top: 100px;
 
     .top_titles {
@@ -23,6 +23,319 @@
             font-size: 19px;
             color: #fff;
             margin-top: 15px;
+        }
+    }
+}
+
+.container2 {
+    padding: 0 0 5rem 0;
+
+    .card1_wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .card1_wrapper_card {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+    }
+}
+
+.container3 {
+    background-color: #ecf0f4;
+    padding: 3rem 0 4rem 0;
+
+    .card2_wrapper {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin-top: 2rem;
+    }
+}
+
+.container4 {
+    padding: 3rem 0 4rem 0;
+
+    .card3_wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+    }
+}
+
+.container6 {
+    background-color: #005688;
+    padding: 3rem 0 4rem 0;
+
+    .img6_wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-bottom: 15px;
+        margin-top: 3rem;
+
+        :nth-child(1) {
+            width: 55px;
+        }
+
+        :nth-child(2) {
+            width: 100px;
+        }
+
+        :nth-child(3) {
+            width: 80px;
+        }
+
+        :nth-child(4) {
+            width: 110px;
+        }
+
+        :nth-child(5) {
+            width: 130px;
+        }
+
+        :nth-child(6) {
+            width: 110px;
+        }
+
+        :nth-child(7) {
+            width: 110px;
+        }
+
+
+
+    }
+
+    .img6_wrapper2 {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+
+        :nth-child(1) {
+            width: 70px;
+        }
+
+        :nth-child(2) {
+            width: 110px;
+        }
+
+        :nth-child(3) {
+            width: 70px;
+        }
+    }
+}
+
+.container7 {
+    background-color: #ecf0f4;
+    padding: 3rem 0 4rem 0;
+
+    .card7_wrapper {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
+
+.container8 {
+    padding: 3rem 0 4rem 0;
+
+    .card8_wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 6rem;
+        margin-top: 5rem;
+
+        .card8_wrapper_card {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
+}
+
+.container9 {
+    background-color: #ecf0f4;
+    padding: 3rem 0 4rem 0;
+}
+
+.container10 {
+    padding: 3rem 0 4rem 0;
+}
+
+.container11 {
+    background-color: #ecf0f4;
+    padding: 3rem 0 4rem 0;
+}
+
+@media screen and (max-width: 991px) {
+    .container2 {
+        .card1_wrapper {
+            display: grid;
+            grid-template-columns: auto;
+        }
+    }
+
+    .container3 {
+        .card2_wrapper {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+    }
+
+    .container4 {
+        .card3_wrapper {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+    }
+
+    .container6 {
+        padding-right: 5rem;
+    }
+
+    .container7 {
+        .card7_wrapper {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+    }
+
+    .container8 {
+        .card8_wrapper {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-left: 5rem;
+
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container4 {
+
+        .card3_wrapper{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        }
+    }
+
+    .container6 {
+        .img6_wrapper {
+            :nth-child(1) {
+                width: 40px;
+            }
+    
+            :nth-child(2) {
+                width: 75px;
+            }
+    
+            :nth-child(3) {
+                width: 65px;
+            }
+    
+            :nth-child(4) {
+                width: 85px;
+            }
+    
+            :nth-child(5) {
+                width: 85px;
+            }
+    
+            :nth-child(6) {
+                width: 85px;
+            }
+    
+            :nth-child(7) {
+                width: 80px;
+            }
+        }
+        .img6_wrapper2 {
+            :nth-child(1) {
+                width: 50px;
+            }
+    
+            :nth-child(2) {
+                width: 85px;
+            }
+    
+            :nth-child(3) {
+                width: 60px;
+            }
+        }
+    }
+
+    .container7 {
+        .card7_wrapper {
+            grid-template-columns: 50% 50%;
+        }
+    }
+
+    .container8 {
+        .card8_wrapper {
+            margin-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 471px) {
+    .container2 {
+        .card1_wrapper {
+            .card1_wrapper_card {
+                grid-template-columns: 100%;
+            }
+        }
+    }
+
+    .container6 {
+        section {
+            margin-left: 4rem;
+        }
+        .img66_wrapper {
+            .img6_wrapper {
+                margin-left: 150px;
+                flex-direction: column;
+                :nth-child(1) {
+                    width: 55px;
+                }
+        
+                :nth-child(2) {
+                    width: 100px;
+                }
+        
+                :nth-child(3) {
+                    width: 80px;
+                }
+        
+                :nth-child(4) {
+                    width: 110px;
+                }
+        
+                :nth-child(5) {
+                    width: 130px;
+                }
+        
+                :nth-child(6) {
+                    width: 110px;
+                }
+        
+                :nth-child(7) {
+                    width: 110px;
+                }
+            }
+            .img6_wrapper2 {
+                margin-left: 150px;
+                flex-direction: column;
+                :nth-child(1) {
+                    width: 70px;
+                }
+        
+                :nth-child(2) {
+                    width: 110px;
+                }
+        
+                :nth-child(3) {
+                    width: 70px;
+                }
+            }
         }
     }
 }
