@@ -16,13 +16,15 @@ import Automation from "./../../../../assets/images/Automation.png";
 import Integration from "./../../../../assets/images/Integration.svg";
 import Collaboration from "./../../../../assets/images/Collaboration.svg";
 import Security from "./../../../../assets/images/Security.svg";
-import AI from "./../../../../assets/images/AI.svg";
-import DataScience from "./../../../../assets/images/DataScience.svg";
-import NetOfThings from "./../../../../assets/images/NetOfThings.svg";
-import MachineLearning from "./../../../../assets/images/MachineLearning.svg";
 import Discovery from "./../../../../assets/images/Discovery.svg";
 import Development from "./../../../../assets/images/Development.svg";
 import Support from "./../../../../assets/images/Support.svg";
+import img1 from "../../../../assets/images/mehrigiyo.jpg";
+import img2 from "../../../../assets/images/napa.png";
+import img3 from "../../../../assets/images/kingbok.jpg";
+import img4 from "../../../../assets/images/edcontrol.png";
+import img5 from "../../../../assets/images/adliya_vazirligi.png";
+import img6 from "../../../../assets/images/it-park.jpg";
 import Haverman from "./../../../../assets/images/Haverman.png";
 import Karbushev from "./../../../../assets/images/Karbushev.jpg";
 import BigSwiper from "../../../../components/Swipers/BigSwiper/BigSwiper";
@@ -30,6 +32,8 @@ import FlexCard from "../../../../components/Cards/FlexCard/FlexCard";
 import ProjectAnalysis from "../../../../components/ProjectAnalysis/ProjectAnalysis";
 import BreadCrumb from "./../../../../components/BreadCrumb/BreadCrumb";
 import HeadLine from "../../../../components/HeadLine/HeadLine";
+import Acardion from "../../../../components/Acardion/Acardion";
+import SmallSwiper from "../../../../components/Swipers/SmallSwiper/SmallSwiper";
 
 const EnterpriseApps = () => {
   const menu = [
@@ -166,6 +170,35 @@ const EnterpriseApps = () => {
         "We implement long-term support and maintenance to ensure the stable work of software resulting in the enhancement of our clients' businesses.",
     },
   ];
+
+  const faqs = [
+    {
+      title: "What is IoT development?",
+      text: 'The Internet of Things (IoT) is a network of physical objects, devices ("things") embedded with sensors, software, and other technologies. The purpose of IoT software development is to connect and exchange data with other devices and systems over the Internet',
+    },
+    {
+      title: "What are the fundamental components of IoT?",
+      text: "All complete Internet of Things (IoT) systems are composed of four different components: sensors/devices, connectivity, data processing, and user interface. Some Internet of Things software development projects may require other layers (e.g. security, technology and governance standards, etc) but these four components represent the foundation of every IoT solution.",
+    },
+    {
+      title: "Is the IoT secure?",
+      text: "Each connected IoT device collects data, sometimes very sensitive personal or business data (e.g. healthcare). Therefore, businesses using Internet of Things solutions and IoT software development companies should pay special attention to network protection. If you work with professional Internet of Things software development provider, they will be able to manage and protect you from the following top IoT security risks:",
+    },
+    {
+      title: "How Much Does IoT Development Cost?",
+      text: "The cost of IoT solutions will consist of 2 main parts - device cost and the Internet of Things software development cost (connectivity, data processing, and user interface development). Device cost will vary depending on if it is a ready-made device or sensor or an absolutely custom and innovative device. IoT software development cost will highly depend on the application scope and usually starts at $20K for an MVP.",
+    },
+  ];
+
+  const data = {
+    img1: img1,
+    img2: img2,
+    img3: img3,
+    img4: img4,
+    img5: img5,
+    img6: img6,
+    title: "Recent Projects We Made",
+  };
   return (
     <>
       <div className={styles.container}>
@@ -269,8 +302,7 @@ const EnterpriseApps = () => {
           </div>
         </div>
         <div className={styles.made}>
-          <Title title={"Recent Software We Made"} />
-          <div></div>
+        <SmallSwiper obj={data} />
         </div>
         <div className={`${styles.swiper}`}>
           <div className={`${styles.innerCont} globalContainer`}>
@@ -287,6 +319,7 @@ const EnterpriseApps = () => {
             <Title title={"Frequently Asked Questions"} />{" "}
             <p className={styles.p}>Answers to commonly asked questions</p>
           </div>
+          <Acardion data={faqs} />
         </div>
         <div className={styles.blueAsk}>
           <ProjectAnalysis />

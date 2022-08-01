@@ -1,16 +1,12 @@
 import React from "react";
 import Button from "../Button/Button";
+import styles from "./index.module.scss"
+const HeadLine = ({ data,  hidden = false, children }) => {
 
-const HeadLine = ({ data, sizeTitle = "38px", hidden = false, children }) => {
-  const style = {
-    fontSize: sizeTitle,
-    color: "#fff",
-    fontWeight: "800",
-  };
 
   return (
     <section>
-      <h2 style={{ ...style }}>{data.title}</h2>
+      <h2 className={styles.title}>{data.title}</h2>
       {data.children}
       {children}
       <div hidden={hidden}>
