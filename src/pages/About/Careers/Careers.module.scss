@@ -1,0 +1,99 @@
+.container {
+  background-image: url("../../../assets/images/backgroundImg/Careers.svg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  padding-top: 100px;
+  margin-bottom: 100px;
+  @media (max-width: 471px) {
+    padding-top: 80px;
+    height: 650px;
+  }
+  .wrapper {
+    h4 {
+      font-size: 40px;
+      font-weight: 800;
+      color: #fff;
+      padding-top: 80px;
+    }
+
+    div {
+      display: none;
+    }
+    p {
+      font-size: 28px;
+      color: #fff;
+      padding-top: 20px;
+    }
+  }
+}
+.cards {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 20px;
+  padding-top: 30px;
+  justify-content: center;
+  @media (max-width: 991px) {
+    grid-template-columns: 50% 50%;
+  }
+  @media (max-width: 601px) {
+    grid-template-columns: auto;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+}
+.images {
+  padding: 60px 0;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: center;
+  gap: 20px;
+
+  @media (max-width: 991px) {
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 30px;
+  }
+  @media (max-width: 471px) {
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 30px;
+  }
+  img {
+    width: 385px;
+    @media (max-width: 1350px) {
+      width: 500px;
+      &:last-child {
+        display: none;
+      }
+    }
+    @media (max-width: 471px) {
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+    @media (max-width: 991px) {
+      width: 400px;
+    }
+    @media (max-width: 767px) {
+      width: 300px;
+    }
+  }
+}
+.questions {
+    background-color: #ecf0f4;
+    padding: 50px 0;
+  
+    .questionsBox {
+      max-width: 700px;
+      margin: 0 auto;
+      p {
+        text-align: center;
+        font-size: 18px;
+        padding: 30px;
+      }
+    }
+}

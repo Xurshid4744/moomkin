@@ -1,7 +1,9 @@
 import About from "./pages/About/About";
+import Careers from "./pages/About/Careers/Careers";
 import EngagementModels from "./pages/About/EngagementModels/EngagementModels";
 import CaseStudio from "./pages/Clients/CaseStudio/CaseStudio";
 import Testimonial from "./pages/Clients/Testimonial/Testimonial";
+import Contacts from "./pages/Contacts/Contacts";
 import EnterpriseApps from "./pages/ExpertiseVsIndustries/Expertise/EnterpriseApps/EnterpriseApps";
 import InternetOfThings from "./pages/ExpertiseVsIndustries/Expertise/InternetOfThings/InternetOfThings";
 import MobileApps from "./pages/ExpertiseVsIndustries/Expertise/MobileApps/MobileApps";
@@ -51,8 +53,8 @@ const routes = [
     { path: `/engagement-models`, element: <EngagementModels/>  },
     { path: `/agile-development-process`, element: "COMPONENT NOMI"  },
     { path: `/software-development-lifecycle`, element: "COMPONENT NOMI"  },
-    { path: `/contacts`, element: "COMPONENT NOMI"},
-    { path: `/careers`, element: "COMPONENT NOMI" },
+    { path: `/contacts`, element: <Contacts/>},
+    { path: `/careers`, element: <Careers/> },
     // ~~~~~~~~~~~~~ INSIGHTS ~~~~~~~~~~~~~
     { path: `/blog`, element: <Blog/> },
     { path: `/all-whitepapers`, element: <WhitePapers/> },

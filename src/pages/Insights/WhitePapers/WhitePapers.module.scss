@@ -1,0 +1,54 @@
+.container {
+  background-image: url("../../../assets/images/backgroundImg/CaseStudies.svg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  padding-top: 120px;
+  @media (max-width: 471px) {
+    padding-top: 80px;
+    height: 650px;
+  }
+  .wrapper {
+    div {
+      display: none;
+    }
+    p {
+      text-align: center;
+      font-size: 28px;
+      color: #fff;
+      padding-top: 20px;
+    }
+  }
+}
+.cards {
+  div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 50px;
+    img {
+      cursor: pointer;
+      width: 500px;
+    }
+  }
+}
+.rewards {
+  padding-top: 100px;
+
+  .rewardsCards {
+    display: flex;
+    @media (max-width: "991px") {
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
+    @media (max-width: "471px") {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    @media (max-width: "391px") {
+      grid-template-columns: auto;
+    }
+  }
+}
