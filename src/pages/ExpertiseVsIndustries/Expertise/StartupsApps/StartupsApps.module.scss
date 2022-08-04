@@ -52,19 +52,28 @@
             @media (max-width: 767px) {
                 width: 700px;
             }
-            // @media (max-width: 471px) {
-            //     width: 400px;
-            // }
+            @media (max-width: 471px) {
+                width: 400px;
+            }
+          
         }
     .filter{
         display: flex;
-        justify-content: center;
-        .infilters{
-            border-bottom: solid red;
+        justify-content: center;  
+        .dotted{
+            border-bottom: dashed red 2px;
+            cursor: pointer;
             margin: 0  100px;
             font-weight: 700;
             font-size: 24px;
-        }     
+          }
+          .solid{
+            border-bottom: solid red 2px;
+            cursor: pointer;
+            margin: 0  100px;
+            font-weight: 700;
+            font-size: 24px;
+          }  
     }
     .FlexCard{
         padding:  100px 0;
@@ -83,7 +92,7 @@
         }
         @media (max-width: 767px) {
             display: grid;
-            grid-template-columns: auto ;
+            grid-template-columns: auto auto;
             width: 500px;
             margin-left: 20px;
         }
@@ -102,6 +111,14 @@
         font-size: 18px;
         font-weight: 300;
         color: #000;
+        
+            @media (max-width: 767px) {
+                width: 700px;
+            }
+            @media (max-width: 471px) {
+                width: 400px;
+            }
+        
     }
     }
     .whitebg{
@@ -123,7 +140,7 @@
                 grid-template-columns: auto auto;
             }
             @media (max-width: 471px) {
-                width: 400;
+                width: 400px;
                 display: grid;
                 grid-template-columns: auto;
             }

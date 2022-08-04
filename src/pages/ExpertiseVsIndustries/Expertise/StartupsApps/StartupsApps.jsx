@@ -23,6 +23,9 @@ import img03 from "../../../../assets/images/img3.jpg";
 import img04 from "../../../../assets/images/img4.jpg";
 import img05 from "../../../../assets/images/img5.jpg";
 import img06 from "../../../../assets/images/img6.jpg";
+import sharing from "../../../../assets/images/sharing.svg";
+import organization from "../../../../assets/images/organization.svg";
+import consultations from "../../../../assets/images/consultations.svg";
 import sertificat1 from "../../../../assets/icons/sertificat-1.svg";
 import sertificat2 from "../../../../assets/icons/sertificat-2.svg";
 import sertificat3 from "../../../../assets/icons/sertificat-3.svg";
@@ -42,11 +45,9 @@ import BreadCrumb from "../../../../components/BreadCrumb/BreadCrumb";
 import HeadLine from "../../../../components/HeadLine/HeadLine";
 
 const StartupsApps = () => {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState();
 
-  const handleClick = () => {
-    setIsActive((current) => !current);
-  };
+ 
 
   const menu = [
     {
@@ -100,6 +101,23 @@ const StartupsApps = () => {
       img: Special,
       title: "SPECIAL REFERRAL PROGRAM",
       text: "Following this program, each startup that works with us on their MVP development and which will recommend another startup to work with SumatoSoft will get a good discount on our app development services in the first 3 months of the cooperation of the referred team.",
+    },
+  ];
+  const accelerate = [
+    {
+      img: sharing,
+      title: "SHARING EXPERTISE",
+      text: "We’re ready to share our knowledge about business and technologies with emerging Startups.",
+    },
+    {
+      img: organization,
+      title: "HELP IN ORGANIZATION AND PROMOTION",
+      text: "SumatoSoft will help to organize conferences, meetups, and other activities and promote them as a part of the overall SumatoSoft marketing activities.",
+    },
+    {
+      img: consultations,
+      title: "ON HAND TECHNICAL CONSULTATIONS",
+      text: "SumatoSoft will be glad to become a technical consultant and help to stay tuned with the latest trends in technologies.",
     },
   ];
 
@@ -292,33 +310,14 @@ const StartupsApps = () => {
             </p>
           </div>
           <div className={styles.filter}>
-            {isActive ? (
-              <div
-                className={styles.infilters}
-                id="1"
-                onClick={handleClick}
-                style={{
-                  borderBottom: isActive ? "solid" : "dashed",
-                  borderBlockColor: isActive ? "red" : "red",
-                }}
-              >
-                FOR STARTUPS
-              </div>
-            ) : (
-              <div
-                className={styles.infilters}
-                id="2"
-                onClick={handleClick}
-                style={{
-                  borderBottom: isActive ? "solid" : "dashed",
-                  borderBlockColor: isActive ? "red" : "red",
-                }}
-              >
-                FOR ACCELERATORS
-              </div>
-            )}
+            <div className={!isActive ? styles.dotted : styles.solid} onClick={() => setIsActive(true)}>
+              FOR STARTUPS
+            </div>
+            <div className={isActive ? styles.dotted : styles.solid} onClick={() => setIsActive(false)}>
+              FOR ACCELERATORS
+            </div>
           </div>
-          <div className={`${styles.FlexCard} globalContainer`}>
+          {isActive ? <div className={`${styles.FlexCard} globalContainer`}>
             {flexCard.map((item) => (
               <div className={styles.asdas}>
                 <FlexCard
@@ -329,7 +328,21 @@ const StartupsApps = () => {
                 />
               </div>
             ))}
-          </div>
+          </div> : 
+          <div className={`${styles.FlexCard} globalContainer`}>
+          {accelerate.map((item) => (
+            <div className={styles.asdas}>
+              <FlexCard
+                img={item.img}
+                title={item.title}
+                text={item.text}
+                children={item.children}
+              />
+            </div>
+          ))}
+        </div>
+          }
+          
           <div className={`${styles.soft} globalContainer`}>
             <div>
               <Title

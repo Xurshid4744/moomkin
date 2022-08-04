@@ -319,7 +319,10 @@ const EnterpriseApps = () => {
             <Title title={"Frequently Asked Questions"} />{" "}
             <p className={styles.p}>Answers to commonly asked questions</p>
           </div>
+          <div className="globalContainer">
+
           <Acardion data={faqs} />
+          </div>
         </div>
         <div className={styles.blueAsk}>
           <ProjectAnalysis />

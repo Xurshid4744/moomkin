@@ -1,4 +1,5 @@
 import About from "./pages/About/About";
+import DevelopmentProcess from "./pages/About/DevelopmentProcess/DevelopmentProcess";
 import EngagementModels from "./pages/About/EngagementModels/EngagementModels";
 import CaseStudio from "./pages/Clients/CaseStudio/CaseStudio";
 import Testimonial from "./pages/Clients/Testimonial/Testimonial";
@@ -7,6 +8,7 @@ import InternetOfThings from "./pages/ExpertiseVsIndustries/Expertise/InternetOf
 import MobileApps from "./pages/ExpertiseVsIndustries/Expertise/MobileApps/MobileApps";
 import SaasDevelopment from "./pages/ExpertiseVsIndustries/Expertise/SaasDevelopment/SaasDevelopment";
 import StartupsApps from "./pages/ExpertiseVsIndustries/Expertise/StartupsApps/StartupsApps";
+import ExpertiseVsIndustries from "./pages/ExpertiseVsIndustries/ExpertiseVsIndustries";
 import AddTechLearning from "./pages/ExpertiseVsIndustries/Industries/AddTechLearning/AddTechLearning";
 import AddTechMarketing from "./pages/ExpertiseVsIndustries/Industries/AddTechMarketing/AddTechMarketing";
 import Blockchain from "./pages/ExpertiseVsIndustries/Industries/Blockchain/Blockchain";
@@ -32,6 +34,7 @@ const routes = [
     { path: `/services/quality-assurance`, element: <TestingServices/> },
     { path: `/services/it-staff-augmentation`, element: <ITStaff/>  },
     // ~~~~~~~~~~~~~ EXPERTISE ~~~~~~~~~~~~~
+    { path: `/app-development-company`, element: <ExpertiseVsIndustries/>  },
     { path: `/solutions/enterprise-software-development`, element: <EnterpriseApps/>  },
     { path: `/solutions/startups-development`, element: <StartupsApps/>  },
     { path: `/solutions/internet-of-things-software-development`, element: <InternetOfThings/>  },
@@ -49,7 +52,7 @@ const routes = [
     // ~~~~~~~~~~~~~ ABOUTE US ~~~~~~~~~~~~~
     { path: `/about`, element: <About /> },
     { path: `/engagement-models`, element: <EngagementModels/>  },
-    { path: `/agile-development-process`, element: "COMPONENT NOMI"  },
+    { path: `/agile-development-process`, element: <DevelopmentProcess/>  },
     { path: `/software-development-lifecycle`, element: "COMPONENT NOMI"  },
     { path: `/contacts`, element: "COMPONENT NOMI"},
     { path: `/careers`, element: "COMPONENT NOMI" },

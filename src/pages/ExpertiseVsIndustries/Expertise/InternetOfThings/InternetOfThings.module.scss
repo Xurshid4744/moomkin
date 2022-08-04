@@ -37,8 +37,19 @@
     .whitebg{
         background-color: white;
         padding: 50px 0;
+        
         .img{
             display: flex;
+            @media (max-width: 767px) {
+              width: 700px;
+            display: grid;
+            grid-template-columns: auto auto;
+              }
+              @media (max-width: 471px) {
+              width: 400px;
+            display: grid;
+            grid-template-columns: auto auto;
+          }
         }
         .p{
             padding: 50px 0;
@@ -83,6 +94,7 @@
         display: grid;
         text-align: start;
         grid-template-columns: auto auto auto;
+        
         div{
             ul{
                 width: 300px;
@@ -142,7 +154,7 @@
             grid-template-columns: auto auto;
         }
         @media (max-width: 471px) {
-            width: 400;
+            width: 400px;
             display: grid;
             grid-template-columns: auto;
         }

@@ -1,0 +1,126 @@
+.container {
+    background-image: url(./../../assets/images/backgroundImg/Expertise&Industries.svg);
+    background-repeat: no-repeat;
+    height: 550px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 120px 0;
+    .wrapper {
+        .headLine {
+          padding-top: 50px;
+          p {
+            font-size: 18px;
+            color: #fff;
+          }
+          ul {
+            padding-left: 40px;
+            padding-top: 20px;
+            li {
+              list-style: outside;
+              font-size: 18px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    @media (max-width: 767px) {
+      // height: 850px;
+    }
+    @media (max-width: 471px) {
+      height: 900px;
+    }
+  }
+
+  .body{
+    background-color: white;
+    padding-top: 50px ;
+    .industry{
+        margin: 50px 0;
+    }
+    .p{
+      padding: 50px 0;
+              text-align: center;
+              padding: 20px 0px 20px 0px;
+              font-size: 18px;
+              font-weight: 300;
+              color: #000;
+    }
+    .InfoCards{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      margin-bottom: 50px;
+      .Cards{
+        margin: 10px;
+        border: #F1F1F1 solid 2px;
+      }
+      @media (max-width: 767px) {
+        width: 700px;
+      display: grid;
+      grid-template-columns: auto auto;
+        }
+        @media (max-width: 471px) {
+        width: 400px;
+      display: grid;
+      grid-template-columns: auto;
+    }
+    }
+    .latest{
+        background-color: #ECF0F4;
+        padding: 50px 0  ;
+        // margin: 50px 0;
+        .latest_cards{
+            display: grid;
+            //  margin: 50px;
+            grid-template-columns: auto auto auto auto;
+            .Cards{
+                background-color: white;
+                margin: 20px;
+            }
+            @media (max-width: 767px) {
+                width: 700px;
+              display: grid;
+              grid-template-columns: auto auto;
+                }
+                @media (max-width: 471px) {
+                width: 400px;
+              display: grid;
+              grid-template-columns: auto;
+            }
+        }
+    }
+    .bluesec{
+        background-color: #005688;
+        padding: 50px 0;
+        .bluesec_cards{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            .Cards{
+                h4{
+                    color: white;
+                }
+                p{
+                    color: white;
+                }
+            }
+            @media (max-width: 767px) {
+                width: 700px;
+              display: grid;
+              grid-template-columns: auto auto;
+                }
+                @media (max-width: 471px) {
+                width: 400px;
+              display: grid;
+              grid-template-columns: auto;
+            }
+        }
+    }
+    .happyClient{
+        background: #ECF0F4;
+        padding: 50px 0;
+      }
+      .blueAsk{
+        background-color: #005688;
+        padding: 50px;
+    }
+}

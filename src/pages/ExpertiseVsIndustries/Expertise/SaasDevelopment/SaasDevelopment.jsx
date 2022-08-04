@@ -308,6 +308,7 @@ const SaasDevelopment = () => {
     img6: img6,
     title: "Recent Projects We Made",
   };
+  
   const animationCardLeft = [
     {
       img1: img17,
