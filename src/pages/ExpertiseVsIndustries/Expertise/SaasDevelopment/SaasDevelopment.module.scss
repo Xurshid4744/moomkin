@@ -46,6 +46,16 @@
     .InfoCards{
       display: grid;
       grid-template-columns: auto auto auto auto auto auto;
+      @media (max-width: 767px) {
+        width: 700px;
+      display: grid;
+      grid-template-columns: auto auto;
+        }
+        @media (max-width: 471px) {
+        width: 400px;
+      display: grid;
+      grid-template-columns: auto;
+    }
     }
     .FlexCard{
       padding:  100px 0;
@@ -98,9 +108,10 @@
           grid-template-columns: auto auto;
       }
       @media (max-width: 471px) {
-          width: 400;
+          width: 300px;
           display: grid;
           grid-template-columns: auto;
+
       }
   }
   }
@@ -109,6 +120,16 @@
     grid-template-columns: auto auto auto;
     padding: 20px;
     text-align: start;
+    @media (max-width: 767px) {
+      width: 700px;
+    display: grid;
+    grid-template-columns: auto auto;
+      }
+      @media (max-width: 471px) {
+      width: 400px;
+    display: grid;
+    grid-template-columns: auto;
+  }
     :nth-child(2){
       margin-left: 90px;
     }
@@ -124,6 +145,16 @@
     .Flexpg{
       display: grid;
       grid-template-columns: auto auto auto;
+      @media (max-width: 767px) {
+        width: 700px;
+      display: grid;
+      grid-template-columns: auto auto;
+        }
+        @media (max-width: 471px) {
+        width: 400px;
+      display: grid;
+      grid-template-columns: auto;
+    }
       .dsas{
         width: 300px;
         padding: 10px;
@@ -189,6 +220,12 @@
           margin-top: 110px;
         }
       }
+      @media (max-width: 767px) {
+        // display: none;
+        }
+        @media (max-width: 471px) {
+        display: none;
+    }
     }
     .made{
       padding: 200px 0 0 0;
@@ -201,6 +238,18 @@
         padding: 50px;
         text-align: center;
         justify-content: center;
+        @media (max-width: 767px) {
+          width: 700px;
+        display: grid;
+        grid-template-columns: auto auto;
+        // padding: 20px;
+          }
+          @media (max-width: 471px) {
+          width: 400px;
+        display: grid;
+        grid-template-columns: auto;
+        // padding: 20px;
+      }
       }
     }
     .faqs{

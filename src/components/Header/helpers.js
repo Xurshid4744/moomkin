@@ -150,7 +150,7 @@ export const data = [
   {
     menu: <Menu items={[...expertise]} style={{ marginTop: "10px" }} />,
     title: "EXPERTISE & INDUSTRIES",
-    link: "",
+    link: "/app-development-company",
     icon: <DownOutlined />,
   },
   {

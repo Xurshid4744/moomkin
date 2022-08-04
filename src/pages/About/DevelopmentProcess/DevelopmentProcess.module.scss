@@ -1,0 +1,148 @@
+.container {
+    background-image: url(./../../../assets//images/backgroundImg/DevelopmentProcess.svg);
+    background-repeat: no-repeat;
+    height: 450px;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 120px 0;
+    .wrapper {
+        // .headLine {
+        //   padding-top: 50px;
+        //   p {
+        //     font-size: 18px;
+        //     color: #fff;
+        //   }
+        //   ul {
+        //     padding-left: 40px;
+        //     padding-top: 20px;
+        //     li {
+        //       list-style: outside;
+        //       font-size: 18px;
+        //       color: #fff;
+        //     }
+        //   }
+        // }
+        .txt{
+            padding: 50px 0;
+            .p{
+                font-size: 18px;
+                color: #fff;
+                text-align: center;
+                padding: 20px;
+            }
+        }
+      }
+    @media (max-width: 767px) {
+      // height: 850px;
+    }
+    @media (max-width: 471px) {
+      height: 700px;
+    }
+  }
+
+  .body{
+    background-color: white;
+    padding-top: 50px ;
+    .methodology{
+      display: flex;
+      justify-content: center;
+      gap: 200px;
+      padding-top: 50px;
+      @media (max-width: 767px) {
+        gap: 100px;
+      }
+      @media (max-width: 471px) {
+        gap: 50px;
+      }
+      .dotted{
+        border-bottom: dashed red 2px;
+        cursor: pointer;
+      }
+      .solid{
+        border-bottom: solid red 2px;
+        cursor: pointer;
+      }
+      
+      div{
+        font-size: 25px;
+        font-weight: 600;
+      }
+    }
+    .scrumsec{
+      padding: 0 100px;
+      img{
+        @media (max-width: 767px) {
+          display: none;
+          width: auto;
+        }
+        @media (max-width: 471px) {
+          display: none;
+        }
+      }
+      .p{
+        padding: 50px;
+        font-weight: normal;
+        @media (max-width: 767px) {
+          // display: block;
+        }
+        @media (max-width: 471px) {
+          width: 400px;
+          margin: 0;
+          // padding: 0;
+          padding-left: 0;
+        }
+      }
+      .greycard{
+        background-color: #ECF0F4;
+        padding: 50px;
+        @media (max-width: 767px) {
+          width: 700px;
+        }
+        @media (max-width: 471px) {
+          // display: none;
+          width: 400px;
+          margin-left: 0 !important;
+          padding-left: 0 !important;
+        }
+      }
+      .InfoCards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 767px) {
+          width: 700px;
+        display: grid;
+        grid-template-columns: auto auto;
+          }
+          @media (max-width: 471px) {
+          width: 400px;
+            align-items: center;
+            justify-content: center;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: auto;
+      }
+      }
+    }
+    section{
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .download{
+        background-color: #F83939;
+        cursor: pointer;
+        h1{
+            color: white;
+            text-align: center;
+            font-weight: 700;
+            padding: 20px 0;
+            margin-bottom: 0 !important;
+        }
+    }
+    .blueAsk{
+        background-color: #005688;
+        padding: 50px;
+    }
+  }
