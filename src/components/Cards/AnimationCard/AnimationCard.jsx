@@ -26,7 +26,7 @@ const AnimationCard = ({
           <h4>{title}</h4>
           <ul>
             <p>{text}</p>
-            {ul.map((item) => (
+            {ul?.map((item) => (
               <li>{item.li}</li>
             ))}
           </ul>

@@ -1,5 +1,6 @@
 import About from "./pages/About/About";
 import Careers from "./pages/About/Careers/Careers";
+import DevelopmentLife from "./pages/About/DevelopmentLife/DevelopmentLife";
 import EngagementModels from "./pages/About/EngagementModels/EngagementModels";
 import CaseStudio from "./pages/Clients/CaseStudio/CaseStudio";
 import Testimonial from "./pages/Clients/Testimonial/Testimonial";
@@ -52,7 +53,7 @@ const routes = [
     { path: `/about`, element: <About /> },
     { path: `/engagement-models`, element: <EngagementModels/>  },
     { path: `/agile-development-process`, element: "COMPONENT NOMI"  },
-    { path: `/software-development-lifecycle`, element: "COMPONENT NOMI"  },
+    { path: `/software-development-lifecycle`, element: <DevelopmentLife/>  },
     { path: `/contacts`, element: <Contacts/>},
     { path: `/careers`, element: <Careers/> },
     // ~~~~~~~~~~~~~ INSIGHTS ~~~~~~~~~~~~~
