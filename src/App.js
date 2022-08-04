@@ -1,12 +1,14 @@
 import Layout from "./components/Layout/Layout";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import routes from "./routes";
 import { useEffect } from "react";
-import AOS from "aos"
+import AOS from "aos";
 function App() {
-  useEffect(()=>{
-      AOS.init()
-  },[])
+  const location = useLocation()
+  useEffect(() => {
+    AOS.init();
+    document.documentElement.scrollTop = 0
+  }, [location.pathname]);
   return (
     <Layout>
       <Routes>

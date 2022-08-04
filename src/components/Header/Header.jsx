@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Dropdown } from "antd";
 import { Collapse } from "antd";
 
-import { data} from "./helpers";
+import { data } from "./helpers";
 import logo from "../../assets/images/Moomkin.png";
 import logo2 from "../../assets/images/Moomkin2.png";
 import menuWhite from "../../assets/images/menu.png";
@@ -11,58 +11,121 @@ import close from "../../assets/images/close.png";
 
 import styles from "./index.module.scss";
 import "../../styles/_global.scss";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+
 const { Panel } = Collapse;
 
 const Header = () => {
+
+  const location = useLocation();
   const [change, setChange] = useState("white");
   const [open, setOpen] = useState(false);
 
   window.onscroll = function () {
-    myFunction();
+    if (!location.pathname.includes("blog")) {
+      myFunction();
+    }
   };
 
   function myFunction() {
     if (document.documentElement.scrollTop > 5) {
       setChange("blue");
     } else {
-      setChange("white");
+      if (location.pathname.includes("blog")) {
+        setChange("blue");
+      } else {
+        setChange("white");
+      }
     }
   }
+  useEffect(() => {
+    if (location.pathname.includes("blog")) {
+      console.log("bor ekan");
+      setChange("blue");
+    } else {
+      setChange("white");
+    }
+    myFunction();
+  }, [location.pathname]);
+
   const resData = [
     {
-      title: <Link to={"/services"} onClick={() => setOpen(false)}>SERVICES</Link>,
+      title: (
+        <Link to={"/services"} onClick={() => setOpen(false)}>
+          SERVICES
+        </Link>
+      ),
       id: "1",
       text: [
-        { li: "Business Analysis", link: "/services/business-analysis-services" },
+        {
+          li: "Business Analysis",
+          link: "/services/business-analysis-services",
+        },
         { li: "UX/UI Design", link: "/services/ui-ux-design" },
-        { li: "Frontend & Backend Development", link: "/services/web-frontend-and-backend-development" },
+        {
+          li: "Frontend & Backend Development",
+          link: "/services/web-frontend-and-backend-development",
+        },
         { li: "QA and Testing", link: "/services/quality-assurance" },
       ],
     },
     {
-      title: <Link to={"/industries"} onClick={() => setOpen(false)}>INDUSTRIES</Link>,
+      title: (
+        <Link to={"/industries"} onClick={() => setOpen(false)}>
+          INDUSTRIES
+        </Link>
+      ),
       id: "2",
       text: [
-        { li: "AdTech & Marketing", link: "/industries/advertising-and-marketing-automation-development" },
-        { li: "EdTech & eLearning", link: "/industries/elearning-software-development" },
-        { li: "Logistics & Transportation", link: "/industries/logistics-software-development" },
+        {
+          li: "AdTech & Marketing",
+          link: "/industries/advertising-and-marketing-automation-development",
+        },
+        {
+          li: "EdTech & eLearning",
+          link: "/industries/elearning-software-development",
+        },
+        {
+          li: "Logistics & Transportation",
+          link: "/industries/logistics-software-development",
+        },
         { li: "E-Commerce", link: "/industries/ecommerce-development" },
       ],
     },
     {
-      title: <Link to={"/expertise"} onClick={() => setOpen(false)}>EXPERTISE</Link>,
+      title: (
+        <Link to={"/expertise"} onClick={() => setOpen(false)}>
+          EXPERTISE
+        </Link>
+      ),
       id: "3",
       text: [
-        { li: "Enterprise Apps", link: "/solutions/enterprise-software-development" },
-        { li: "Startups Applications", link: "/solutions/startups-development" },
-        { li: "Internet of Things", link: "/solutions/internet-of-things-software-development" },
-        { li: "Mobile Applications", link: "/solutions/mobile-app-development" },
+        {
+          li: "Enterprise Apps",
+          link: "/solutions/enterprise-software-development",
+        },
+        {
+          li: "Startups Applications",
+          link: "/solutions/startups-development",
+        },
+        {
+          li: "Internet of Things",
+          link: "/solutions/internet-of-things-software-development",
+        },
+        {
+          li: "Mobile Applications",
+          link: "/solutions/mobile-app-development",
+        },
         { li: "SaaS Development", link: "/solutions/saas-development" },
       ],
     },
     {
-      title: <Link to={"/clients"} onClick={() => setOpen(false)}>CLIENTS</Link>,
+      title: (
+        <Link to={"/portfolio"} onClick={() => setOpen(false)}>
+          CLIENTS
+        </Link>
+      ),
       id: "4",
       text: [
         { li: "Case Studies", link: "/portfolio" },
@@ -70,17 +133,25 @@ const Header = () => {
       ],
     },
     {
-      title: <Link to={"/about"} onClick={() => setOpen(false)}>ABOUT US</Link>,
+      title: (
+        <Link to={"/about"} onClick={() => setOpen(false)}>
+          ABOUT US
+        </Link>
+      ),
       id: "5",
       text: [
-        { li: "Team", link: "/about#team"},
+        { li: "Team", link: "/about#team" },
         { li: "Engagement Models", link: "/engagement-models" },
         { li: "Development Process", link: "/agile-development-process" },
         { li: "Contacts", link: "/contacts" },
       ],
     },
     {
-      title: <Link to={"/insights"} onClick={() => setOpen(false)}>INSIGHTS</Link>,
+      title: (
+        <Link to={"/insights"} onClick={() => setOpen(false)}>
+          INSIGHTS
+        </Link>
+      ),
       id: "6",
       text: [
         { li: "Whitepapers", link: "/all-whitepapers" },

@@ -164,7 +164,7 @@ export const data = [
       </Menu>
     ),
     title: "CLIENTS",
-    link: "/clients",
+    link: "/portfolio",
     icon: <DownOutlined />,
   },
   {
@@ -181,7 +181,7 @@ export const data = [
     link: "/about",
     icon: <DownOutlined />,
   },
-  { menu: "", title: "CONTACTS", link: "/contact" },
+  { menu: "", title: "CONTACTS", link: "/contacts" },
   {
     menu: (
       <Menu style={{ padding: "20px 0", marginTop: "10px" }}>

@@ -5,12 +5,19 @@
   background-repeat: no-repeat;
   height: 620px;
   padding-top: 120px;
+  @media (max-width: 471px) {
+    padding-top: 80px;
+    height: 650px;
+  }
   .wrapper {
     .headLine {
       padding-top: 50px;
       p {
         font-size: 18px;
         color: #fff;
+        @media (max-width: 471px) {
+          font-size: 16px;
+        }
       }
       ul {
         padding-left: 40px;
@@ -56,9 +63,36 @@
   .images {
     padding: 40px 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
+    @media (max-width: 991px) {
+      grid-template-columns: auto auto;
+      justify-content: center;
+      gap: 30px;
+    }
+    @media (max-width: 471px) {
+      grid-template-columns: auto;
+      justify-content: center;
+      gap: 30px;
+    }
     img {
       width: 400px;
+      @media (max-width: 1350px) {
+        width: 500px;
+        &:last-child {
+          display: none;
+        }
+      }
+      @media (max-width: 471px) {
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+      @media (max-width: 991px) {
+        width: 400px;
+      }
+      @media (max-width: 767px) {
+        width: 300px;
+      }
     }
   }
 }
@@ -71,7 +105,12 @@
   .industryBox {
     display: grid;
     grid-template-columns: auto auto auto;
-
+    @media (max-width: 991px) {
+      grid-template-columns: auto auto;
+    }
+    @media (max-width: 471px) {
+      grid-template-columns: auto;
+    }
     h4 {
       font-size: 18px;
       color: #2678bd;
@@ -84,15 +123,17 @@
 }
 
 .flexContainer {
-    background-color: #ecf0f4;
+  background-color: #ecf0f4;
   .flexBox {
     display: grid;
     grid-template-columns: auto auto;
     padding: 50px;
     gap: 50px;
-   
-    img{
-        width: 70px ;
+    @media (max-width: 471px) {
+      grid-template-columns: auto;
+    }
+    img {
+      width: 70px;
     }
     ul {
       padding-left: 20px;
@@ -100,6 +141,168 @@
       li {
         list-style: outside;
       }
+    }
+  }
+}
+.features {
+  background-color: #005688;
+  .featuresBox {
+    padding-top: 50px;
+    .featuresCards {
+      display: flex;
+      @media (max-width: 991px) {
+        display: grid;
+        grid-template-columns: auto auto auto;
+      }
+      @media (max-width: 767px) {
+        grid-template-columns: auto auto;
+      }
+      @media (max-width: 991px) {
+        grid-template-columns: auto;
+      }
+
+      img {
+        width: 60px;
+      }
+      p {
+        color: #fff;
+      }
+      h4 {
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+  }
+}
+.rewards {
+  padding-top: 100px;
+  .rewardsTitle {
+    text-align: center;
+    padding: 20px 100px 20px 100px;
+    @media (max-width: 767px) {
+      padding: 20px;
+    }
+    font-size: 19px;
+    @media (max-width: "471px") {
+      padding: 0;
+      padding-top: 20px;
+      font-size: 16px;
+    }
+  }
+  .rewardsCards {
+    display: flex;
+    @media (max-width: "991px") {
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
+    @media (max-width: "471px") {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    @media (max-width: "391px") {
+      grid-template-columns: auto;
+    }
+  }
+}
+
+.uxProcess {
+  padding: 100px 0;
+  overflow: hidden;
+  @media (max-width: "700px") {
+    display: none;
+  }
+  .uxTitle {
+    font-size: 18px;
+    text-align: center;
+    padding: 30px;
+  }
+  .uxProcessBox {
+    display: flex;
+    position: relative;
+
+    .uxProcessLeft {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 50px;
+      width: 50%;
+    }
+    .uxProcessRight {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      padding-top: 90px;
+      gap: 30px;
+      width: 50%;
+      @media (max-width: 991px) {
+        padding-top: 65px;
+      }
+    }
+    .uxProcessLine {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 110px;
+      left: 50%;
+      height: 900px;
+      width: 0.5px;
+      background-color: #0056884b;
+      @media (max-width: "767px") {
+        display: none;
+      }
+
+      span {
+        background-color: #f55;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-left: -7.5px;
+        margin-top: -5px;
+      }
+      .item2 {
+        margin-top: 100px;
+      }
+      .item3 {
+        margin-top: 130px;
+        @media (max-width: 991px) {
+          margin-top: 140px;
+        }
+      }
+      .item4 {
+        margin-top: 125px;
+        @media (max-width: 991px) {
+          margin-top: 150px;
+        }
+      }
+      .item5 {
+        margin-top: 110px;
+        @media (max-width: 991px) {
+          margin-top: 100px;
+        }
+      }
+      .item6 {
+        margin-top: 110px;
+        @media (max-width: 991px) {
+          margin-top: 130px;
+        }
+      }
+      .item7 {
+        margin-top: 110px;
+      }
+    }
+  }
+}
+.questions {
+  background-color: #ecf0f4;
+  padding: 50px 0;
+
+  .questionsBox {
+    max-width: 700px;
+    margin: 0 auto;
+    p {
+      text-align: center;
+      font-size: 18px;
+      padding: 30px;
     }
   }
 }

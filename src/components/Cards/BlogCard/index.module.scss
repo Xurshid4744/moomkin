@@ -1,0 +1,88 @@
+.container {
+  width: 400px;
+  height: 500px;
+  border-radius: 20px;
+  background-image: none;
+  background-size: cover;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 1s;
+  position: relative;
+
+  &:hover {
+  background-image: url("../../../assets/images/blogCard.jpg");
+    
+    .images {
+      height: 100px;
+    }
+    .titles {
+      background-color: transparent;
+      .readMore {
+        display: block;
+      }
+      h6 {
+        color: #fff;
+      }
+    }
+    .left {
+      p {
+        color: #fff;
+      }
+    }
+    .right {
+      p {
+        color: #fff;
+      }
+      span {
+        color: #fff;
+      }
+    }
+  }
+  .images {
+    height: 208px;
+    width: 100%;
+    transition: 0.2s;
+    background-image: url("../../../assets/images/mehrigiyo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .titles {
+    padding: 40px 30px;
+    background-color: #f3f6fb;
+    h6 {
+      font-size: 30px;
+      font-weight: 800;
+      color: rgb(31, 31, 54);
+    }
+    .about {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-top: 20px;
+      .left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+        }
+      }
+      .right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+    .readMore {
+      position: absolute;
+      font-size: 16px;
+      font-weight: 800;
+      color: #fff;
+      bottom: 20px;
+      display: none;
+    }
+  }
+}
