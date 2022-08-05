@@ -26,7 +26,7 @@ import responsiveness from "./../../../assets/images/responsiveness.svg";
 import SoftwareCard from "../../../components/Cards/SoftwareCard/SoftwareCard";
 
 function DevelopmentProcess() {
-  const [scrum, setSrum] = useState();
+  const [scrum, setSrum] = useState(true);
 
   const headLine = {
     title: "Application Development Made Simple & Transparent",

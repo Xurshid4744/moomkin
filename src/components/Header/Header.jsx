@@ -13,6 +13,8 @@ import styles from "./index.module.scss";
 import "../../styles/_global.scss";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import Modal from "../Modal/Modal";
+import Contact from "../Contact/Contact";
 
 const { Panel } = Collapse;
 
@@ -21,6 +23,7 @@ const Header = () => {
   const location = useLocation();
   const [change, setChange] = useState("white");
   const [open, setOpen] = useState(false);
+  const [show, setSHow] = useState(false)
 
   window.onscroll = function () {
     if (!location.pathname.includes("blog")) {
@@ -186,7 +189,7 @@ const Header = () => {
         ))}
 
         <div className={styles.buttons}>
-          <button className={styles.contact}>CONTACT</button>
+          <button className={styles.contact} onClick={()=> setSHow(true)}>CONTACT</button>
           <img
             src={change === "white" ? menuWhite : menuBlack}
             alt="menu"
@@ -226,6 +229,8 @@ const Header = () => {
           ))}
         </div>
       </div>
+
+      {show && <Modal children={<Contact setSHow={setSHow}/>}/>}
     </nav>
   );
 };
