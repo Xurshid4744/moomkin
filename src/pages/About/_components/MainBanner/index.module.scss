@@ -1,10 +1,10 @@
 .container {
   background-image: url(../../../../assets/icons/main-bg.svg);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: 50% 50%;
   height: 380px;
   width: 100%;
-  background-size: 1500px;
+  background-size: cover;
   .wrapper {
     padding-top: 100px;
     @media (max-width: 991px) {

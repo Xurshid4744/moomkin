@@ -165,7 +165,6 @@ const LogisticsTrans = () => {
           <div className={styles.titles}>
             <h1 className={styles.titles__title}>Logistics & Transportation Software Development</h1>
             <p className={styles.titles__text}>Let’s streamline and optimize logistics business processes, improve transportation load and route planning, eliminate shipment issues, and reduce costs with custom logistics and transportation software tailored to the way you move things around the world.</p>
-            <p className={styles.titles__text}>During custom eCommerce website development, we use brand-new ways to optimize customer service and order processes.</p>
             <ul className={styles.bottom}>
               <li className={styles.bottom__text}>Procurement & Sourcing Management</li>
               <li className={styles.bottom__text}>Warehouse Management</li>

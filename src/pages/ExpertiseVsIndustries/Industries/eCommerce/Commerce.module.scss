@@ -1,119 +1,110 @@
 .container {
-    background-image: url("../../../../assets/images/backgroundImg/Ecommerce.svg");
-    background-repeat: no-repeat;
-    background-position: top;
-    height: 1200px;
-    width: 100%;
-    background-size: 3500px;
-    padding-top: 100px;
+  background-image: url("../../../../assets/images/backgroundImg/Ecommerce.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 700px;
+  background-size: cover;
+  padding-top: 100px;
 
-    .titles {
-        display: flex;
-        flex-direction: column;
-        margin-top: 130px;
+  .titles {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
 
-        &__title {
-            font-family: 'Nunito Sans', sans-serif;
-            color: #fff;
-            font-size: 44px;
-            font-weight: 800;
-        }
-
-        &__text {
-            font-family: 'Nunito Sans', sans-serif;
-            font-size: 19px;
-            color: #fff;
-            text-align: left;
-            margin-top: 15px;
-        }
-
-        .bottom {
-            margin-top: 15px;
-
-            &__text {
-                margin-left: 15px;
-                padding-top: 6px;
-                color: #fff;
-                font-size: 18px;
-                list-style: disc !important;
-            }
-        }
+    &__title {
+      font-family: "Nunito Sans", sans-serif;
+      color: #fff;
+      font-size: 44px;
+      font-weight: 800;
     }
 
+    &__text {
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 18px;
+      color: #fff;
+      text-align: left;
+      margin-top: 15px;
+      padding-right: 100px;
+    }
+
+    .bottom {
+      margin-top: 40px;
+      margin-left: 20px;
+
+      &__text {
+        margin-left: 15px;
+        color: #fff;
+        font-size: 18px;
+        list-style: disc !important;
+      }
+    }
+  }
 }
 
-.input_card {
-    position: relative;
-    top: 50px;
-    box-shadow: 0 0 24px 11px rgb(0 0 0 / 20%);
-}
+
 
 .ecommere_title {
-    margin-top: 200px;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 36px;
-    line-height: 1.3;
-    font-weight: 900;
-    text-align: center;
-    text-transform: capitalize;
+  margin-top: 100px;
+  padding-bottom: 100px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 36px;
+  line-height: 1.3;
+  font-weight: 900;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .choose_card {
-    padding-top: 200px;
-    background-color: #ecf0f4;
-    padding-bottom: 50px;
+  padding-top: 200px;
+  background-color: #ecf0f4;
+  padding-bottom: 50px;
 }
 
 .texts {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-bottom: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-bottom: 50px;
 
-    .text {
-        font-size: 18px;
-        line-height: 1.43;
-        font-style: normal;
-        font-weight: 300;
-        text-align: center;
-    }
+  .text {
+    font-size: 18px;
+    line-height: 1.43;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+  }
 }
 
 .softwareCard {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .app_development {
-    background-color: #ecf0f4;
-    padding: 100px 100px;
+  background-color: #ecf0f4;
+  padding: 100px 100px;
 
-    .swiperWrapper {
-        margin-top: 50px;
-        display: flex;
-        .swiperWrapper__titles{
-            // width: 50%;
-            p{
-                font-size: 18px;
-                font-weight: 300;
-            }
-        }
-       
+  .swiperWrapper {
+    margin-top: 50px;
+    display: flex;
+    .swiperWrapper__titles {
+      // width: 50%;
+      p {
+        font-size: 18px;
+        font-weight: 300;
+      }
     }
+  }
 }
 
-.big__Swiper{
-    padding: 50px 50px;
+.big__Swiper {
+  padding: 50px 50px;
 }
-
 
 @media screen and (max-width: 471px) {
+  .swiperWrapper__titles {
+    width: 500px;
+  }
 
-    .swiperWrapper__titles{
-        width: 500px
-    }
-
-    .app_development {
-        padding: 0;
-    }
-
+  .app_development {
+    padding: 0;
+  }
 }
-

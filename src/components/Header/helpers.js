@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { DownOutlined } from "@ant-design/icons";
 import { Menu } from "antd";
 import MenuItem from "antd/lib/menu/MenuItem";
 
@@ -42,19 +41,31 @@ const expertise = [
             <li style={{ fontSize: "14px", color: "gray", cursor: "auto" }}>
               EXPERTISE
             </li>
-            <Link to="/solutions/enterprise-software-development" style={{color:"#000"}}>
+            <Link
+              to="/solutions/enterprise-software-development"
+              style={{ color: "#000" }}
+            >
               <li>Enterprise Apps</li>
             </Link>
-            <Link to="/solutions/startups-development" style={{color:"#000"}}>
+            <Link
+              to="/solutions/startups-development"
+              style={{ color: "#000" }}
+            >
               <li>Startups Apps</li>
             </Link>
-            <Link to="/solutions/internet-of-things-software-development" style={{color:"#000"}}>
+            <Link
+              to="/solutions/internet-of-things-software-development"
+              style={{ color: "#000" }}
+            >
               <li>Internet of Things</li>
             </Link>
-            <Link to="/solutions/mobile-app-development" style={{color:"#000"}}>
+            <Link
+              to="/solutions/mobile-app-development"
+              style={{ color: "#000" }}
+            >
               <li>Mobile Apps</li>
             </Link>
-            <Link to="/solutions/saas-development" style={{color:"#000"}}>
+            <Link to="/solutions/saas-development" style={{ color: "#000" }}>
               <li>SaaS Development</li>
             </Link>
           </ul>
@@ -64,19 +75,31 @@ const expertise = [
             <li style={{ fontSize: "14px", color: "gray", cursor: "auto" }}>
               INDUSTRIES
             </li>
-            <Link to="/industries/advertising-and-marketing-automation-development" style={{color:"#000"}}>
+            <Link
+              to="/industries/advertising-and-marketing-automation-development"
+              style={{ color: "#000" }}
+            >
               <li>AdTech & Marketing</li>
             </Link>
-            <Link to="/industries/elearning-software-development" style={{color:"#000"}}>
+            <Link
+              to="/industries/elearning-software-development"
+              style={{ color: "#000" }}
+            >
               <li>EdTech & eLearning</li>
             </Link>
-            <Link to="/industries/ecommerce-development" style={{color:"#000"}}>
+            <Link
+              to="/industries/ecommerce-development"
+              style={{ color: "#000" }}
+            >
               <li>eCommerce</li>
             </Link>
-            <Link to="/industries/logistics-software-development" style={{color:"#000"}}>
+            <Link
+              to="/industries/logistics-software-development"
+              style={{ color: "#000" }}
+            >
               <li>Logistics & Transportation</li>
             </Link>
-            <Link to="/industries/blockchain" style={{color:"#000"}}>
+            <Link to="/industries/blockchain" style={{ color: "#000" }}>
               <li>Blockchain</li>
             </Link>
           </ul>
@@ -97,8 +120,8 @@ const clients = [
 ];
 const about = [
   {
-    link: "/about#team",
     label: "Team",
+    link: "/about",
   },
   {
     link: "/engagement-models",
@@ -138,64 +161,65 @@ export const data = [
       <Menu style={{ padding: "20px 0", marginTop: "10px" }}>
         {services.map((a) => (
           <MenuItem style={{ fontSize: "16px", padding: "10px 20px" }}>
-            <Link to={a.link} style={{color:"#000"}}>{a.label}</Link>
+            <Link to={a.link} style={{ color: "#000" }}>
+              {a.label}
+            </Link>
           </MenuItem>
         ))}
       </Menu>
     ),
     title: "SERVICES",
     link: "/services",
-    icon: <DownOutlined />,
   },
   {
     menu: <Menu items={[...expertise]} style={{ marginTop: "10px" }} />,
     title: "EXPERTISE & INDUSTRIES",
     link: "/app-development-company",
-    icon: <DownOutlined />,
   },
   {
     menu: (
       <Menu style={{ padding: "20px 0", marginTop: "10px" }}>
         {clients.map((a) => (
           <MenuItem style={{ fontSize: "16px", padding: "10px 20px" }}>
-            <Link to={a.link} style={{color:"#000"}}>{a.label}</Link>
+            <Link to={a.link} style={{ color: "#000" }}>
+              {a.label}
+            </Link>
           </MenuItem>
         ))}
       </Menu>
     ),
     title: "CLIENTS",
     link: "/portfolio",
-    icon: <DownOutlined />,
   },
   {
     menu: (
       <Menu style={{ padding: "20px 0", marginTop: "10px" }}>
         {about.map((a) => (
           <MenuItem style={{ fontSize: "16px", padding: "10px 20px" }}>
-            <Link to={a.link} style={{color:"#000"}}>{a.label}</Link>
+            <Link to={a.link} style={{ color: "#000" }}>
+              {a.label}
+            </Link>
           </MenuItem>
         ))}
       </Menu>
     ),
     title: "ABOUT US",
     link: "/about",
-    icon: <DownOutlined />,
   },
-  { menu: "", title: "CONTACTS", link: "/contacts" },
+  { menu: "", title: "CONTACTS", link: "/contacts", arrow: "arrow" },
   {
     menu: (
       <Menu style={{ padding: "20px 0", marginTop: "10px" }}>
         {insights.map((a) => (
           <MenuItem style={{ fontSize: "16px", padding: "10px 20px" }}>
-            <Link to={a.link} style={{color:"#000"}}>{a.label}</Link>
+            <Link to={a.link} style={{ color: "#000" }}>
+              {a.label}
+            </Link>
           </MenuItem>
         ))}
       </Menu>
     ),
     title: "INSIGHTS",
-    link: "/insights",
-    icon: <DownOutlined />,
+    link: "no",
   },
 ];
-
-

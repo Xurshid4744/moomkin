@@ -19,11 +19,11 @@ const Footer = () => {
             </div> 
             <div className={styles.icons}>
                 <img src={message} alt="location" className={styles.icon}/>
-                <p>[email protected]</p>
+                <p><a href="https://moomkin.io@gmail.com">moomkin.io@gmail.com</a></p>
             </div> 
             <div className={styles.networks}>
                 {icons.map((item)=>(
-                    <span key={item.icon}><img src={item.icon} alt="icon" /></span>
+                    <span key={item.icon}><a href={item.link}><img src={item.icon} alt="icon" /></a></span>
                 ))}
             </div>
         </div>

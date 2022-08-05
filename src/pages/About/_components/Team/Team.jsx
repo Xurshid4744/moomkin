@@ -9,6 +9,11 @@ import avatar5 from "../../../../assets/images/hamza.png";
 
 import styles from "./index.module.scss";
 import Title from "../../../../components/Title/Title";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Scrollbar, A11y } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
 const Team = () => {
   const obj = [
     {
@@ -35,6 +40,8 @@ const Team = () => {
       last_name: "Anvarjonov",
       position: "CTO / Product manager",
     },
+  ];
+  const obj2 = [
     {
       img: avatar5,
       first_name: "Hamza",
@@ -43,19 +50,48 @@ const Team = () => {
     },
   ];
   return (
-    <section className={styles.container} id="team">
-        <Title title={"Management Team"}/>
-    <div className={styles.cards}>
-    {obj.map((item) => (
-        <TeamCard
-          img={item.img}
-          first_name={item.first_name}
-          last_name={item.last_name}
-          position={item.position}
-          key={item.first_name}
-        />
-      ))}
-    </div>
+    <section className={`${styles.container} globalContainer`} id="team">
+      <Title title={"Management Team"} />
+      <div className={styles.cards}>
+        <Swiper
+          style={{
+            "--swiper-navigation-color": "gray",
+          }}
+          modules={[Navigation, Scrollbar, A11y]}
+          spaceBetween={10}
+          slidesPerView={1}
+          loop={true}
+          navigation
+          scrollbar={{ draggable: true }}
+        >
+          <SwiperSlide>
+            <div className={styles.swiper}>
+              {obj.map((item) => (
+                <TeamCard
+                  img={item.img}
+                  first_name={item.first_name}
+                  last_name={item.last_name}
+                  position={item.position}
+                  key={item.first_name}
+                />
+              ))}
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.swiper}>
+              {obj2.map((item) => (
+                <TeamCard
+                  img={item.img}
+                  first_name={item.first_name}
+                  last_name={item.last_name}
+                  position={item.position}
+                  key={item.first_name}
+                />
+              ))}
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </section>
   );
 };

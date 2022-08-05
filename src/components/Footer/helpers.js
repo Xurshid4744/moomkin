@@ -1,6 +1,7 @@
 import facebook from "../../assets/icons/facebook.svg"
 import linkedin from "../../assets/icons/linkedin.svg"
 import twitr from "../../assets/icons/twitr.svg"
+import telegram from "../../assets/icons/telegram.svg"
 
 export const obj = [
   { name: "Services", link: "#" },
@@ -35,7 +36,7 @@ export const obj4 = [
 ];
 
 export const icons = [
-  {icon: facebook },
-  {icon: linkedin},
-  {icon: twitr}
+  {icon: telegram, link:"" },
+  {icon: linkedin, link:"https://www.linkedin.com/company/moomkinio"},
+  {icon: twitr, link:"/"}
 ]

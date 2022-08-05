@@ -89,15 +89,13 @@ const AddTechLearning = () => {
               <li className={styles.bottom__text}>Assessment and Evaluation Software</li>
             </ul>
           </div>
-          <div className={styles.input_card}>
-            <DiscussProject />
-          </div>
+       
         </div>
       </section>
 
       <section>
         <div className='globalContainer'>
-          <div style={{ marginTop: "130px" }}>
+          <div style={{ marginTop: "50px" }}>
             <Title color={"#000"} title={"ELearning Software We Develop"} />
           </div>
           <div className={styles.texts}>

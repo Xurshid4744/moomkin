@@ -15,15 +15,15 @@ import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Modal from "../Modal/Modal";
 import Contact from "../Contact/Contact";
-
+import iconWhite from "../../assets/icons/arrowDownW.svg";
+import iconBlack from "../../assets/icons/arrowDownB.svg";
 const { Panel } = Collapse;
 
 const Header = () => {
-
   const location = useLocation();
   const [change, setChange] = useState("white");
   const [open, setOpen] = useState(false);
-  const [show, setSHow] = useState(false)
+  const [show, setSHow] = useState(false);
 
   window.onscroll = function () {
     if (!location.pathname.includes("blog")) {
@@ -175,21 +175,36 @@ const Header = () => {
           </Link>
         </div>
 
-        {data.map((item) => (
-          <ul style={{ marginTop: "15px" }}>
+        <ul className={styles.ul}>
+          {data.map((item) => (
             <Dropdown overlay={item.menu} placement="bottom">
               <ul>
-                <Link to={item.link}>
+                {item.link !== "no" ? (
+                  <Link to={item.link}>
+                    <li>{item.title}</li>
+                  </Link>
+                ) : (
                   <li>{item.title}</li>
-                </Link>
-                <i>{item.icon}</i>
+                )}
+                {item.arrow ? null : (
+                  <>
+                    <i className={styles.iconWhite}>
+                      <img src={iconWhite} alt="" />
+                    </i>
+                    <i className={styles.iconBlack}>
+                      <img src={iconBlack} alt="" />
+                    </i>
+                  </>
+                )}
               </ul>
             </Dropdown>
-          </ul>
-        ))}
+          ))}
+        </ul>
 
         <div className={styles.buttons}>
-          <button className={styles.contact} onClick={()=> setSHow(true)}>CONTACT</button>
+          <button className={styles.contact} onClick={() => setSHow(true)}>
+            CONTACT
+          </button>
           <img
             src={change === "white" ? menuWhite : menuBlack}
             alt="menu"
@@ -230,7 +245,7 @@ const Header = () => {
         </div>
       </div>
 
-      {show && <Modal children={<Contact setSHow={setSHow}/>}/>}
+      {show && <Modal children={<Contact setSHow={setSHow} />} />}
     </nav>
   );
 };

@@ -1,16 +1,15 @@
 .container {
     background-image: url('../../../../assets/images/backgroundImg/Edtech&Elearning.svg');
     background-repeat: no-repeat;
-    background-position: top;
-    height: 1200px;
-    width: 100%;
-    background-size: 3500px;
+    background-position: 50% 50%;
+    height: 670px;
+    background-size: cover;
     padding-top: 100px;
 
     .titles {
         display: flex;
         flex-direction: column;
-        margin-top: 130px;
+        margin-top: 80px;
 
         &__title {
             font-family: 'Nunito Sans', sans-serif;
@@ -29,10 +28,10 @@
 
         .bottom {
             margin-top: 15px;
+            margin-left: 20px;
 
             &__text {
                 margin-left: 15px;
-                padding-top: 6px;
                 color: #fff;
                 font-size: 18px;
                 list-style: disc !important;
