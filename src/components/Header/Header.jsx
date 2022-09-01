@@ -202,7 +202,7 @@ const Header = () => {
         </ul>
 
         <div className={styles.buttons}>
-          <button className={styles.contact} onClick={() => setSHow(true)}>
+          <button className={styles.contact} >
             CONTACT
           </button>
           <img
